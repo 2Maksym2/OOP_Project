@@ -19,32 +19,37 @@ namespace DealHub
         public int Id { get; set; }
         public string Title
         {
-            get { throw new NotImplementedException(); }
+            get { return title; }
             set
             {
-                throw new NotImplementedException();
+                if (string.IsNullOrWhiteSpace(value)) throw new Exception("Назва не може бути порожньою або складатися тільки з пробілів!");
+                title = value;
             }
         }
         public string Description
         {
-            get { throw new NotImplementedException(); }
+            get { return description; }
             set
             {
-                throw new NotImplementedException();
+                if (string.IsNullOrWhiteSpace(value)) throw new Exception("Опис не може бути порожнім або складатися тільки з пробілів!");
+                description = value;
             }
         }
         public double Price
         {
-            get { throw new NotImplementedException(); }
+            get { return price; }
             set
             {
-                throw new NotImplementedException();
+                if (value < 0) throw new Exception("Ціна не може бути меншою за 0 грн");
+                price = value;
             }
         }
+        [JsonConverter(typeof(StringEnumConverter))]
         public Category Category { get; set; }
         public string Image { get; set; }
         public bool IsActive { get; set; } = true;
         public string OwnerNickname { get; set; }
+        [JsonIgnore] //Щоб уникнути зациклення
         public RegisteredUser Owner { get; private set; }
 
 
@@ -52,13 +57,24 @@ namespace DealHub
         public Ad() { }
         public Ad(string title, string description, Category category, string image, double adprice, RegisteredUser user)
         {
-            throw new NotImplementedException();
+            Id = totalAdsCreated++;
+            Title = title;
+            Description = description;
+            Category = category;
+            Image = image;
+            OwnerNickname = user.Nickname;
+            Price = adprice;
         }
 
 
+        // Метод для оновлення ID при завантаженні даних
         public static void UpdateTotalAdsCreated(List<Ad> ads)
         {
-            throw new NotImplementedException();
+            if (ads.Any())
+            {
+                totalAdsCreated = ads.Max(a => a.Id) + 1;
+            }
         }
     }
 }
+

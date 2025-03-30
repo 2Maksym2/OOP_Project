@@ -25,11 +25,22 @@ namespace DealHub
         public Complaint() { }
         public Complaint(RegisteredUser complainant, RegisteredUser? receiver, Ad? receiverAd, string description)
         {
-            throw new NotImplementedException();
+            Id = _nextId++;
+            ReceiverName = receiver.Nickname;
+            Title = "Скарга";
+            Description = description;
+            if (receiverAd != null)
+            {
+                AdTitle = receiverAd.Title;
+                AdId = receiverAd.Id;
+            }
         }
         public static void UpdateTotalComplaintsCreated(List<Complaint> complaints)
         {
-            throw new NotImplementedException();
+            if (complaints.Any())
+            {
+                _nextId = complaints.Max(a => a.Id) + 1;
+            }
         }
 
     }

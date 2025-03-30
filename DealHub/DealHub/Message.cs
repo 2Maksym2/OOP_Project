@@ -21,7 +21,9 @@ namespace DealHub
         public Message() { }
         public Message(User sender, User receiver, string content)
         {
-            throw new NotImplementedException();
+            senderNickname = sender.Nickname;
+            receiverNickname = receiver.Nickname;
+            Content = content;
         }
     }
 }

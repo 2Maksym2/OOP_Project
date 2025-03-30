@@ -14,7 +14,9 @@ namespace DealHub
 
         public Review(RegisteredUser author, string content)
         {
-            throw new NotImplementedException();
+            Author = author;
+            Content = content;
+            CreatedAt = DateTime.Now;
         }
     }
 }
