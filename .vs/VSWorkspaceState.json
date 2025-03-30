@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DealHub",
+    "\\DealHub\\DealHub"
   ],
+  "SelectedNode": "\\DealHub\\DealHub\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

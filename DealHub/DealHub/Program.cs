@@ -490,7 +490,7 @@ namespace DealHub
                                 try
                                 {
                                     Console.WriteLine("Виберіть категорію оголошення або введіть 0:");
-                                    Console.WriteLine("1 - Electronics \n2 - Cars \n3 - RealEstate \n4 - Services \n5 - Jobs \n6 - Bikes");
+                                    Console.WriteLine("\n1 - Побутова_техніка \n2 - Електроніка \n3 - Одяг \n4 - Догляд_за_тілом \n5 - Дім_і_сад \n6 - Дитячі_товари \n7 - Спорт \n8 - Автотовари \n9 - Зоотовари \n10 - Хобі_та_творчість");
                                     choice = Console.ReadLine();
                                     if (choice == "0") { newcategory = default; break; }
                                     else if (!Enum.TryParse(choice, true, out newcategory) || !Enum.IsDefined(typeof(Category), newcategory))
@@ -656,7 +656,7 @@ namespace DealHub
                         try
                         {
                             Console.WriteLine("Виберіть категорію оголошення:");
-                            Console.WriteLine("1 - Electronics \n2 - Cars \n3 - RealEstate \n4 - Services \n5 - Jobs \n6 - Bikes");
+                            Console.WriteLine("\n1 - Побутова_техніка \n2 - Електроніка \n3 - Одяг \n4 - Догляд_за_тілом \n5 - Дім_і_сад \n6 - Дитячі_товари \n7 - Спорт \n8 - Автотовари \n9 - Зоотовари \n10 - Хобі_та_творчість");
 
                             if (!Enum.TryParse(Console.ReadLine(), true, out category) || !Enum.IsDefined(typeof(Category), category))
                             {
