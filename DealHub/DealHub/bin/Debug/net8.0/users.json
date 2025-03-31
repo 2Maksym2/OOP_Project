@@ -1,0 +1,172 @@
+﻿[
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 1,
+        "Title": "Продам IPhone 12 Pro",
+        "Description": "Смартфон IPhone 12 Pro, 128GB, без подряпин. В комплекті зарядний пристрій та коробка.",
+        "Price": 18000.0,
+        "Category": "Електроніка",
+        "Image": "1",
+        "IsActive": true,
+        "OwnerNickname": "Maxim079"
+      },
+      {
+        "Id": 2,
+        "Title": "Дитяча коляска 2 в 1",
+        "Description": "Продається коляска Anex в гарному стані. Має ароматизацію, зручна для малюка.",
+        "Price": 7500.0,
+        "Category": "Дитячі_товари",
+        "Image": "1",
+        "IsActive": true,
+        "OwnerNickname": "Maxim079"
+      },
+      {
+        "Id": 3,
+        "Title": "Авто Shkoda Octavia 2015, 1.6 дизель",
+        "Description": "Машина в чудовому стані, не бита, всі ТО пройдено. Торг біля капоту.",
+        "Price": 510000.0,
+        "Category": "Автотовари",
+        "Image": "1",
+        "IsActive": true,
+        "OwnerNickname": "Maxim079"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [
+      {
+        "receiverNickname": "Maxim079",
+        "senderNickname": "Zubaref",
+        "Content": "Добрий день хочу замовити смартфон",
+        "SentAt": "2025-04-01T00:44:05.5737798+03:00"
+      }
+    ],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "Maxim079",
+    "Password": "123456"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 4,
+        "Title": "Нова шуба норкова, розмір M",
+        "Description": "Дуже тепла та стильна норкова шуба, носилася один сезон. Без дефектів.",
+        "Price": 22000.0,
+        "Category": "Одяг",
+        "Image": "1",
+        "IsActive": false,
+        "OwnerNickname": "Zubaref"
+      },
+      {
+        "Id": 5,
+        "Title": "Здається квартира 1-кімнатна біля метро",
+        "Description": "Оренда квартири на довгий термін. Світла, з ремонтом, меблі та техніка в наявності.",
+        "Price": 10000.0,
+        "Category": "Дім_і_сад",
+        "Image": "1",
+        "IsActive": true,
+        "OwnerNickname": "Zubaref"
+      },
+      {
+        "Id": 6,
+        "Title": "Продається ноутбук Asus",
+        "Description": "Потужний ноутбук для роботи та навчання. SSD 512GB, i5, 16GB RAM, стан ідеальний",
+        "Price": 28000.0,
+        "Category": "Електроніка",
+        "Image": "1",
+        "IsActive": true,
+        "OwnerNickname": "Zubaref"
+      }
+    ],
+    "MessagesSent": [
+      {
+        "receiverNickname": "Maxim079",
+        "senderNickname": "Zubaref",
+        "Content": "Добрий день хочу замовити смартфон",
+        "SentAt": "2025-04-01T00:44:05.5737798+03:00"
+      },
+      {
+        "receiverNickname": "PashaT",
+        "senderNickname": "Zubaref",
+        "Content": "Дякую за замовлення, товар відправив очікуйте.",
+        "SentAt": "2025-04-01T01:07:27.9761586+03:00"
+      }
+    ],
+    "MessagesReceived": [
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "PashaT",
+        "Content": "\nДобрий день! Я оформив замовлення на Нова шуба норкова, розмір M.\nМої контактні дані для зв'яку: \nПІБ: Сидоренко  Павел  Іванович\nМій номер: +380 995088302\nАдреса доставки: Поштомат №45120",
+        "SentAt": "2025-04-01T00:59:02.8585783+03:00"
+      }
+    ],
+    "Reviews": [
+      {
+        "AuthorName": "PashaT",
+        "Content": "Гарний сервіс",
+        "CreatedAt": "2025-04-01T01:12:08.7401202+03:00"
+      }
+    ],
+    "IsAdmin": false,
+    "Nickname": "Zubaref",
+    "Password": "00001111"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 7,
+        "Title": "Продається земельна ділянка 10 соток",
+        "Description": "Гарне місце під забудову, всі комунікації поряд.",
+        "Price": 300000.0,
+        "Category": "Дім_і_сад",
+        "Image": "1",
+        "IsActive": true,
+        "OwnerNickname": "PashaT"
+      },
+      {
+        "Id": 8,
+        "Title": "Продам велосипед BMX",
+        "Description": "Велосипед в гарному стані, все працює, легкий та надійний.",
+        "Price": 8000.0,
+        "Category": "Спорт",
+        "Image": "1",
+        "IsActive": true,
+        "OwnerNickname": "PashaT"
+      },
+      {
+        "Id": 9,
+        "Title": "Корм Royal Canin для котів, 10кг",
+        "Description": "Сухий корм преміум-класу для дорослих котів. Велика упаковка, оригінал.",
+        "Price": 3200.0,
+        "Category": "Зоотовари",
+        "Image": "1",
+        "IsActive": true,
+        "OwnerNickname": "PashaT"
+      }
+    ],
+    "MessagesSent": [
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "PashaT",
+        "Content": "\nДобрий день! Я оформив замовлення на Нова шуба норкова, розмір M.\nМої контактні дані для зв'яку: \nПІБСидоренко  Павел  Іванович\nМій номер: +380 995088302\nАдреса доставки: Поштомат №45120",
+        "SentAt": "2025-04-01T00:59:02.8585783+03:00"
+      }
+    ],
+    "MessagesReceived": [
+      {
+        "receiverNickname": "PashaT",
+        "senderNickname": "Zubaref",
+        "Content": "Дякую за замовлення, товар відправив очікуйте.",
+        "SentAt": "2025-04-01T01:07:27.9761586+03:00"
+      }
+    ],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "PashaT",
+    "Password": "11110000"
+  }
+]

@@ -129,7 +129,7 @@ namespace DealHub
                 .ToList();
 
             var allUsers = allUsersNicknames
-                .Select(nickname => system.Users.FirstOrDefault(u => u.Nickname == nickname)) // ищем пользователя по никнейму
+                .Select(nickname => system.Users.FirstOrDefault(u => u.Nickname == nickname)) 
                 .Where(user => user != null)
                 .ToList();
 
@@ -170,7 +170,7 @@ namespace DealHub
             MessageForUser.Invoke($"\n Чат між {sender.Nickname} та {receiver.Nickname}:");
             foreach (var message in chatMessages)
             {
-                string name = message.senderNickname == sender.Nickname ? "Ви" : sender.Nickname;
+                string name = message.senderNickname == sender.Nickname ? "Ви" : receiver.Nickname;
                 MessageForUser.Invoke($"[{message.SentAt}] {name}: {message.Content}");
             }
         }
@@ -196,7 +196,7 @@ namespace DealHub
 
             foreach (var review in reviews)
             {
-                MessageForUser?.Invoke($"[{review.CreatedAt}] {review.Author.Nickname}: {review.Content}");
+                MessageForUser?.Invoke($"[{review.CreatedAt}] {review.AuthorName}: {review.Content}");
             }
         }
         public Complaint SendComplaint(DealHubSystem system, RegisteredUser? receiver, Ad? receiverAd, string description)

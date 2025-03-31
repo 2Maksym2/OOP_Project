@@ -139,7 +139,7 @@ namespace DealHub
             try
             {
                 string usersJson = JsonConvert.SerializeObject(users, Formatting.Indented);
-                File.WriteAllText(UsersFile, usersJson, new System.Text.UTF8Encoding(false));
+                File.WriteAllText(UsersFile, usersJson, Encoding.UTF8);
             }
             catch (Exception ex)
             {
@@ -149,7 +149,7 @@ namespace DealHub
             try
             {
                 string adminsJson = JsonConvert.SerializeObject(admins, Formatting.Indented);
-                File.WriteAllText(AdminsFile, adminsJson, new System.Text.UTF8Encoding(false));
+                File.WriteAllText(AdminsFile, adminsJson, Encoding.UTF8);
             }
             catch (Exception)
             {
@@ -159,7 +159,7 @@ namespace DealHub
             try
             {
                 string complaintsJson = JsonConvert.SerializeObject(complaints, Formatting.Indented);
-                File.WriteAllText(ComplaintsFile, complaintsJson, new System.Text.UTF8Encoding(false));
+                File.WriteAllText(ComplaintsFile, complaintsJson, Encoding.UTF8);
             }
             catch (Exception)
             {

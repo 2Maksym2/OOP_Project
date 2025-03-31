@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Id": 1,
+    "ReceiverName": "Zubaref",
+    "AdId": 4,
+    "AdTitle": "Нова шуба норкова, розмір M",
+    "Title": "Скарга",
+    "Description": "Автор не відправив товар після замовлення"
+  },
+  {
+    "Id": 2,
+    "ReceiverName": "PashaT",
+    "AdId": 0,
+    "AdTitle": null,
+    "Title": "Скарга",
+    "Description": "Перевірка скарги на користувача"
+  }
+]

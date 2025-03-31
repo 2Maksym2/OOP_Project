@@ -14,7 +14,8 @@ namespace DealHub
             DealHubSystem system = new();
             system.LoadData();
 
-            Console.OutputEncoding = UTF8Encoding.UTF8;
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.InputEncoding = System.Text.Encoding.Unicode;
             RegisteredUser.MessageForUser += message => Console.WriteLine(message);
             DealHubSystem.MessageForUser += message => Console.WriteLine(message);
             Admin.MessageForUser += message => Console.WriteLine(message);
@@ -137,6 +138,7 @@ namespace DealHub
         }
         public static void AdminViewAds(DealHubSystem system, Admin administrator)
         {
+
             int action;
             while (true)
             {
@@ -180,6 +182,7 @@ namespace DealHub
         }
         public static void AdminViewUsers(DealHubSystem system, Admin administrator)
         {
+
             int action;
             while (true)
             {
@@ -228,6 +231,7 @@ namespace DealHub
         }
         public static void AdminViewComplaints(DealHubSystem system, Admin administrator)
         {
+
             int action;
             while (true)
             {
@@ -275,7 +279,8 @@ namespace DealHub
         }
         public static void ViewAds(DealHubSystem system, User currentUser, string choice, bool flag1)
         {
-            int action;
+
+            int action, c;
             bool flag = true;
             List<Ad> adsForUser = new();
 
@@ -286,7 +291,7 @@ namespace DealHub
                     adsForUser = system.AllAds.Where(a => a.OwnerNickname != currentUser?.Nickname && a.IsActive == true).ToList();
                     for (int i = 0; i < adsForUser.Count; i++)
                     {
-                        Console.WriteLine($"{i + 1} {adsForUser[i].Title} - {adsForUser[i].Description}");
+                        Console.WriteLine($"{i + 1} {adsForUser[i].Title} - {adsForUser[i].Description} \n {adsForUser[i].Price} грн");
                     }
                     flag1 = false;
                 }
@@ -320,16 +325,16 @@ namespace DealHub
                             {
                                 Console.WriteLine("Введіть номер оголошення (0 для повернення):");
 
-                                if (!int.TryParse(Console.ReadLine(), out action))
+                                if (!int.TryParse(Console.ReadLine(), out c))
                                     throw new Exception("Помилка! Введіть число.");
 
-                                if (action == 0)
+                                if (c == 0)
                                 {
                                     flagTocontinue = false;
                                     break;
                                 }
 
-                                if (action < 1 || action > adsForUser.Count)
+                                if (c < 1 || c > adsForUser.Count)
                                     throw new Exception("Оголошення не знайдено");
 
                                 break;
@@ -341,12 +346,13 @@ namespace DealHub
                         }
                         while (flagTocontinue)
                         {
-                            int adId = adsForUser[n - 1].Id;
+                            int adId = adsForUser[c - 1].Id;
                             Ad ad = system.AllAds.First(a => a.Id == adId);
 
                             Console.WriteLine($"\nОголошення:");
                             Console.WriteLine($"Назва: {ad.Title}");
                             Console.WriteLine($"Опис: {ad.Description}");
+                            Console.WriteLine($"Ціна: {ad.Price} грн");
                             Console.WriteLine($"Автор: {ad.OwnerNickname}");
 
                             Console.WriteLine("\n1. Написати повідомлення автору \n2. Оформити замовлення \n3. Відправити скаргу про оголошення \n0. Повернутися до списку оголошень");
@@ -444,7 +450,7 @@ namespace DealHub
                                         }
                                         catch (Exception ex)
                                         {
-                                            Console.WriteLine($"❌ Сталася помилка: {ex.Message}");
+                                            Console.WriteLine($"Сталася помилка: {ex.Message}");
                                         }
                                     }
                                 }
@@ -534,6 +540,7 @@ namespace DealHub
         }
         public static User GuestRegistration(DealHubSystem system, User currentUser)
         {
+
             Console.Write("\nІм'я користувача: ");
             string? newUsername = Console.ReadLine().Trim();
 
@@ -558,6 +565,7 @@ namespace DealHub
         }
         public static User GuestLogIn(DealHubSystem system)
         {
+
             User currentUser;
             try
             {
@@ -574,6 +582,7 @@ namespace DealHub
         }
         public static void MyAds(DealHubSystem system, RegisteredUser regUser)
         {
+
             while (true)
             {
                 string nullstring;
@@ -777,6 +786,7 @@ namespace DealHub
         }
         public static void UserChats(DealHubSystem system, RegisteredUser regUser)
         {
+
             int action;
             bool flag = true;
             string nullstring;
@@ -851,8 +861,6 @@ namespace DealHub
                                 Console.WriteLine($"Сталася помилка: {ex.Message}");
                             }
 
-                            regUser.ViewMessages(selectedUser, regUser);
-
                             while (true)
                             {
                                 Console.WriteLine("\n1. Відправити повідомлення \n2. Відправити скаргу про користувача \n0. Вийти з чату");
@@ -921,6 +929,7 @@ namespace DealHub
         }
         public static bool Order(DealHubSystem system, RegisteredUser regUser, Ad ad)
         {
+
             if (ad.IsActive == false) { Console.WriteLine("Оголошення вже недоступне"); return false; }
             try
             {
@@ -992,7 +1001,7 @@ namespace DealHub
                     }
                     catch (Exception ex) { Console.WriteLine(ex.Message); }
                 }
-                string contactDetails = "Мої контактні дані для зв'яку: " + "\n" + "ПІБ" + lastName + "  " + firstName + "  " + middleName + "\n" + "Мій номер: +380 " + phoneNumber + "\n" + "Адреса доставки: " + deliveryAddress;
+                string contactDetails = "Мої контактні дані для зв'яку: " + "\n" + "ПІБ: " + lastName + "  " + firstName + "  " + middleName + "\n" + "Мій номер: +380 " + phoneNumber + "\n" + "Адреса доставки: " + deliveryAddress;
                 RegisteredUser receiver = system.Users.First(u => u.Nickname == ad.OwnerNickname);
                 regUser.OrderAd(ad, contactDetails, receiver);
                 system.SaveData();

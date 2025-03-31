@@ -24,7 +24,7 @@ namespace DealHub
             MessageForUser?.Invoke("\nСписок скарг:");
             foreach (var complaint in system.Complaints)
             {
-                string target = complaint.AdTitle == null ? $"Користувач: {complaint.ReceiverName} \nДеталі: {complaint.Description}" : $"Оголошення:  {complaint.AdId} {complaint.AdTitle} \nДеталі: {complaint.Description}";
+                string target = complaint.AdTitle == null ? $"Користувач: {complaint.ReceiverName} \nДеталі: {complaint.Description}" : $"Оголошення:  [adId: {complaint.AdId}] {complaint.AdTitle} \nДеталі: {complaint.Description}";
                 MessageForUser?.Invoke($"[{complaint.Id}] {complaint.Title} - {target}");
             }
             return true;
@@ -40,7 +40,7 @@ namespace DealHub
             }
 
             system.Complaints.Remove(complaint);
-            MessageForUser?.Invoke($"Скарга \"{complaint.Title}\" успішно розглянута і видалена.");
+            MessageForUser?.Invoke($"Скарга успішно розглянута і видалена.");
             return true;
         }
 
