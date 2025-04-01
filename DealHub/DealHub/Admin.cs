@@ -29,7 +29,6 @@ namespace DealHub
             }
             return true;
         }
-
         public bool DeleteComplaint(DealHubSystem system, int complaintId)
         {
             Complaint? complaint = system.Complaints.FirstOrDefault(c => c.Id == complaintId);
@@ -43,7 +42,6 @@ namespace DealHub
             MessageForUser?.Invoke($"Скарга успішно розглянута і видалена.");
             return true;
         }
-
         public void DeleteAd(DealHubSystem system, int adId)
         {
             Ad? adToDelete = system.AllAds.FirstOrDefault(a => a.Id == adId);

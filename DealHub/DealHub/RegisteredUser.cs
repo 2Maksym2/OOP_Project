@@ -74,7 +74,7 @@ namespace DealHub
             }
 
             int newId = system.AllAds.Count > 1 ? system.AllAds.Max(a => a.Id) + 1 : 1;
-            Ad newAd = new Ad(title, description, category, image, price, user);
+            Ad newAd = new Ad(title, description, category, image, price, user.Nickname);
             Ads.Add(newAd);
             system.AllAds.Add(newAd);
 
@@ -113,7 +113,7 @@ namespace DealHub
                 throw new Exception("\nПовідомлення не може бути порожнім.");
             }
 
-            Message message = new Message(this, receiver, content);
+            Message message = new Message(this.Nickname, receiver.Nickname, content);
             MessagesSent.Add(message);
             receiver.MessagesReceived.Add(message);
             MessageForUser?.Invoke($"Повідомлення надіслано {receiver.Nickname}: \"{content}\"");
@@ -181,7 +181,7 @@ namespace DealHub
                 throw new Exception("\nВідгук повинен містити мінімум 5 символів.");
             }
 
-            Review review = new Review(this, content);
+            Review review = new Review(this.Nickname, content);
             receiver.Reviews.Add(review);
             MessageForUser?.Invoke($"Відгук для {receiver.Nickname} успішно додано!");
         }

@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DealHub\\bin\\Debug\\net8.0\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{68AB7716-EB96-4494-AE37-295DBCCC32C3}|TestDealHubProject\\TestDealHubProject.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\testdealhubproject\\testdealhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68AB7716-EB96-4494-AE37-295DBCCC32C3}|TestDealHubProject\\TestDealHubProject.csproj|solutionrelative:testdealhubproject\\testdealhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\registereduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\registereduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\ad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\ad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,8 +23,32 @@
       "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\dealhubsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\registereduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\registereduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DealHub\\bin\\Debug\\net8.0\\admins.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DealHub\\bin\\Debug\\net8.0\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,15 +58,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestDealHub.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\TestDealHubProject\\TestDealHub.cs",
+              "RelativeDocumentMoniker": "TestDealHubProject\\TestDealHub.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\TestDealHubProject\\TestDealHub.cs",
+              "RelativeToolTip": "TestDealHubProject\\TestDealHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:36:08.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClassDiagram.cd",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\ClassDiagram.cd",
+              "RelativeDocumentMoniker": "DealHub\\ClassDiagram.cd",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\ClassDiagram.cd",
+              "RelativeToolTip": "DealHub\\ClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2025-04-01T08:13:00.751Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Ad.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Ad.cs",
+              "RelativeDocumentMoniker": "DealHub\\Ad.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Ad.cs",
+              "RelativeToolTip": "DealHub\\Ad.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDcAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:10:43.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Message.cs",
+              "RelativeDocumentMoniker": "DealHub\\Message.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Message.cs",
+              "RelativeToolTip": "DealHub\\Message.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:09:24.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Category.cs",
               "RelativeDocumentMoniker": "DealHub\\Category.cs",
@@ -63,59 +134,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Review.cs",
               "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Review.cs",
               "RelativeDocumentMoniker": "DealHub\\Review.cs",
               "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Review.cs",
               "RelativeToolTip": "DealHub\\Review.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T22:13:58.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "admins.json",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json",
-              "RelativeDocumentMoniker": "DealHub\\bin\\Debug\\net8.0\\admins.json",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json",
-              "RelativeToolTip": "DealHub\\bin\\Debug\\net8.0\\admins.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T22:02:06.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Admin.cs",
               "RelativeDocumentMoniker": "DealHub\\Admin.cs",
               "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Admin.cs",
               "RelativeToolTip": "DealHub\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAACeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T21:51:58.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "DealHubSystem.cs",
               "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\DealHubSystem.cs",
               "RelativeDocumentMoniker": "DealHub\\DealHubSystem.cs",
               "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\DealHubSystem.cs",
               "RelativeToolTip": "DealHub\\DealHubSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:17:08.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "RegisteredUser.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\RegisteredUser.cs",
+              "RelativeDocumentMoniker": "DealHub\\RegisteredUser.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\RegisteredUser.cs",
+              "RelativeToolTip": "DealHub\\RegisteredUser.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T20:15:30.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Program.cs",
+              "RelativeDocumentMoniker": "DealHub\\Program.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Program.cs",
+              "RelativeToolTip": "DealHub\\Program.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAQwEYCAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T20:14:52.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "users.json",
               "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\users.json",
               "RelativeDocumentMoniker": "DealHub\\bin\\Debug\\net8.0\\users.json",
@@ -128,28 +212,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegisteredUser.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\RegisteredUser.cs",
-              "RelativeDocumentMoniker": "DealHub\\RegisteredUser.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\RegisteredUser.cs",
-              "RelativeToolTip": "DealHub\\RegisteredUser.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAA6wMgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:15:30.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Program.cs",
-              "RelativeDocumentMoniker": "DealHub\\Program.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Program.cs",
-              "RelativeToolTip": "DealHub\\Program.cs",
-              "ViewState": "AgIAANEDAAAAAAAAAAAUwOsDAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:14:52.269Z",
+              "DocumentIndex": 9,
+              "Title": "admins.json",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json",
+              "RelativeDocumentMoniker": "DealHub\\bin\\Debug\\net8.0\\admins.json",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json",
+              "RelativeToolTip": "DealHub\\bin\\Debug\\net8.0\\admins.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-31T22:02:06.345Z",
               "EditorCaption": ""
             }
           ]

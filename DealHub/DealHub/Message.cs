@@ -11,18 +11,14 @@ namespace DealHub
     {
         public string receiverNickname { get; set; }
         public string senderNickname { get; set; }
-        [JsonIgnore]
-        public User Sender { get; private set; }
-        [JsonIgnore]
-        public User Receiver { get; private set; }
         public string Content { get; set; }
         public DateTime SentAt { get; set; } = DateTime.Now;
 
         public Message() { }
-        public Message(User sender, User receiver, string content)
+        public Message(string sender, string receiver, string content)
         {
-            senderNickname = sender.Nickname;
-            receiverNickname = receiver.Nickname;
+            senderNickname = sender;
+            receiverNickname = receiver;
             Content = content;
         }
     }

@@ -49,20 +49,18 @@ namespace DealHub
         public string Image { get; set; }
         public bool IsActive { get; set; } = true;
         public string OwnerNickname { get; set; }
-        [JsonIgnore] //Щоб уникнути зациклення
-        public RegisteredUser Owner { get; private set; }
 
 
 
         public Ad() { }
-        public Ad(string title, string description, Category category, string image, double adprice, RegisteredUser user)
+        public Ad(string title, string description, Category category, string image, double adprice, string ownernickname)
         {
             Id = totalAdsCreated++;
             Title = title;
             Description = description;
             Category = category;
             Image = image;
-            OwnerNickname = user.Nickname;
+            OwnerNickname = ownernickname;
             Price = adprice;
         }
 

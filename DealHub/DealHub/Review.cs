@@ -9,16 +9,14 @@ namespace DealHub
 {
     public class Review
     {
-        [JsonIgnore]
-        public RegisteredUser Author { get; }
         public string AuthorName { get; set;}
         public string Content { get; set; }
         public DateTime CreatedAt { get; set; }
 
         public Review(){ }
-        public Review(RegisteredUser author, string content)
+        public Review(string author, string content)
         {
-            AuthorName = author.Nickname;
+            AuthorName = author;
             Content = content;
             CreatedAt = DateTime.Now;
         }
