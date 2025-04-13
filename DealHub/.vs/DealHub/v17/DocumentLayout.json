@@ -3,52 +3,84 @@
   "WorkspaceRootPath": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68AB7716-EB96-4494-AE37-295DBCCC32C3}|TestDealHubProject\\TestDealHubProject.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\testdealhubproject\\testdealhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68AB7716-EB96-4494-AE37-295DBCCC32C3}|TestDealHubProject\\TestDealHubProject.csproj|solutionrelative:testdealhubproject\\testdealhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\view\\reviews.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\view\\reviews.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\viewmodel\\reviewsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\viewmodel\\reviewsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\ad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\ad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\view\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\view\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\view\\registereduserpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\view\\registereduserpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\dealhubsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\dealhubsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\view\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\view\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\registereduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\registereduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\view\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\view\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\view\\chats.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\view\\chats.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\viewmodel\\chatsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\viewmodel\\chatsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DealHub\\bin\\Debug\\net8.0\\admins.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\viewmodel\\profilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\viewmodel\\profilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhub\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD7B2C5-9A49-41BA-9C8C-80900DC79854}|DealHub\\DealHub.csproj|solutionrelative:dealhub\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DealHub\\bin\\Debug\\net8.0\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\utilities\\datatemplate.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\utilities\\datatemplate.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\view\\chats.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\view\\chats.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\viewmodel\\registereduserpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\viewmodel\\registereduserpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\styles\\categorybuttons.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\styles\\categorybuttons.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\viewmodel\\registerpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\viewmodel\\registerpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\viewmodel\\loginpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\viewmodel\\loginpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\styles\\logbutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\styles\\logbutton.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|d:\\labs\\practice2\\oop_project\\dealhub\\dealhubwpf\\viewmodel\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}|DealHubWPF\\DealHubWPF.csproj|solutionrelative:dealhubwpf\\viewmodel\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,169 +90,265 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TestDealHub.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\TestDealHubProject\\TestDealHub.cs",
-              "RelativeDocumentMoniker": "TestDealHubProject\\TestDealHub.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\TestDealHubProject\\TestDealHub.cs",
-              "RelativeToolTip": "TestDealHubProject\\TestDealHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T09:36:08.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClassDiagram.cd",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\ClassDiagram.cd",
-              "RelativeDocumentMoniker": "DealHub\\ClassDiagram.cd",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\ClassDiagram.cd",
-              "RelativeToolTip": "DealHub\\ClassDiagram.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2025-04-01T08:13:00.751Z",
+              "DocumentIndex": 8,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Home.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\View\\Home.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Home.xaml",
+              "RelativeToolTip": "DealHubWPF\\View\\Home.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T12:37:19.884Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Ad.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Ad.cs",
-              "RelativeDocumentMoniker": "DealHub\\Ad.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Ad.cs",
-              "RelativeToolTip": "DealHub\\Ad.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDcAAAB6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:10:43.663Z",
+              "Title": "Profile.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Profile.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\View\\Profile.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Profile.xaml",
+              "RelativeToolTip": "DealHubWPF\\View\\Profile.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T14:47:43.703Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Message.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Message.cs",
-              "RelativeDocumentMoniker": "DealHub\\Message.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Message.cs",
-              "RelativeToolTip": "DealHub\\Message.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T08:09:24.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Category.cs",
-              "RelativeDocumentMoniker": "DealHub\\Category.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Category.cs",
-              "RelativeToolTip": "DealHub\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T22:23:42.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Review.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Review.cs",
-              "RelativeDocumentMoniker": "DealHub\\Review.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Review.cs",
-              "RelativeToolTip": "DealHub\\Review.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T22:13:58.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Admin.cs",
-              "RelativeDocumentMoniker": "DealHub\\Admin.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Admin.cs",
-              "RelativeToolTip": "DealHub\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T21:51:58.159Z",
+              "Title": "Chats.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Chats.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\View\\Chats.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Chats.xaml",
+              "RelativeToolTip": "DealHubWPF\\View\\Chats.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T16:09:48.845Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DealHubSystem.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\DealHubSystem.cs",
-              "RelativeDocumentMoniker": "DealHub\\DealHubSystem.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\DealHubSystem.cs",
-              "RelativeToolTip": "DealHub\\DealHubSystem.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:17:08.739Z",
+              "Title": "RegisterPage.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\RegisterPage.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\View\\RegisterPage.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\RegisterPage.xaml",
+              "RelativeToolTip": "DealHubWPF\\View\\RegisterPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T08:56:07.501Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RegisteredUser.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\RegisteredUser.cs",
-              "RelativeDocumentMoniker": "DealHub\\RegisteredUser.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\RegisteredUser.cs",
-              "RelativeToolTip": "DealHub\\RegisteredUser.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:15:30.844Z",
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\View\\LoginPage.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\LoginPage.xaml",
+              "RelativeToolTip": "DealHubWPF\\View\\LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T13:04:32.139Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Program.cs",
-              "RelativeDocumentMoniker": "DealHub\\Program.cs",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\Program.cs",
-              "RelativeToolTip": "DealHub\\Program.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAQwEYCAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:14:52.269Z",
+              "DocumentIndex": 0,
+              "Title": "Reviews.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Reviews.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\View\\Reviews.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Reviews.xaml",
+              "RelativeToolTip": "DealHubWPF\\View\\Reviews.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T19:46:30.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "users.json",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\users.json",
-              "RelativeDocumentMoniker": "DealHub\\bin\\Debug\\net8.0\\users.json",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\users.json",
-              "RelativeToolTip": "DealHub\\bin\\Debug\\net8.0\\users.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T20:16:41.783Z",
+              "DocumentIndex": 7,
+              "Title": "ChatsVM.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\ChatsVM.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\ViewModel\\ChatsVM.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\ChatsVM.cs",
+              "RelativeToolTip": "DealHubWPF\\ViewModel\\ChatsVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:09:59.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisteredUserPage.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\RegisteredUserPage.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\View\\RegisteredUserPage.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\RegisteredUserPage.xaml",
+              "RelativeToolTip": "DealHubWPF\\View\\RegisteredUserPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T13:27:38.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewsVM.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\ReviewsVM.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\ViewModel\\ReviewsVM.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\ReviewsVM.cs",
+              "RelativeToolTip": "DealHubWPF\\ViewModel\\ReviewsVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T19:46:15.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "admins.json",
-              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json",
-              "RelativeDocumentMoniker": "DealHub\\bin\\Debug\\net8.0\\admins.json",
-              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json",
-              "RelativeToolTip": "DealHub\\bin\\Debug\\net8.0\\admins.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T22:02:06.345Z",
+              "Title": "ProfileVM.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\ProfileVM.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\ViewModel\\ProfileVM.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\ProfileVM.cs",
+              "RelativeToolTip": "DealHubWPF\\ViewModel\\ProfileVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T14:44:07.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NavigationVM.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\NavigationVM.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\ViewModel\\NavigationVM.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\NavigationVM.cs",
+              "RelativeToolTip": "DealHubWPF\\ViewModel\\NavigationVM.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAIAwwC4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T21:21:50.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataTemplate.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\Utilities\\DataTemplate.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\Utilities\\DataTemplate.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\Utilities\\DataTemplate.xaml",
+              "RelativeToolTip": "DealHubWPF\\Utilities\\DataTemplate.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T04:58:43.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Chats.xaml.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Chats.xaml.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\View\\Chats.xaml.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\View\\Chats.xaml.cs",
+              "RelativeToolTip": "DealHubWPF\\View\\Chats.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T19:28:08.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisteredUserPageVM.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\RegisteredUserPageVM.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\ViewModel\\RegisteredUserPageVM.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\RegisteredUserPageVM.cs",
+              "RelativeToolTip": "DealHubWPF\\ViewModel\\RegisteredUserPageVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:37:01.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoryButtons.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\Styles\\CategoryButtons.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\Styles\\CategoryButtons.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\Styles\\CategoryButtons.xaml",
+              "RelativeToolTip": "DealHubWPF\\Styles\\CategoryButtons.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T15:48:12.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginPageVM.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\LoginPageVM.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\ViewModel\\LoginPageVM.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\LoginPageVM.cs",
+              "RelativeToolTip": "DealHubWPF\\ViewModel\\LoginPageVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:42:26.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterPageVM.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\RegisterPageVM.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\ViewModel\\RegisterPageVM.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\RegisterPageVM.cs",
+              "RelativeToolTip": "DealHubWPF\\ViewModel\\RegisterPageVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T12:57:25.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\App.xaml.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\App.xaml.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\App.xaml.cs",
+              "RelativeToolTip": "DealHubWPF\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:29:33.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LogButton.xaml",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\Styles\\LogButton.xaml",
+              "RelativeDocumentMoniker": "DealHubWPF\\Styles\\LogButton.xaml",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\Styles\\LogButton.xaml",
+              "RelativeToolTip": "DealHubWPF\\Styles\\LogButton.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-13T13:17:44.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeVM.cs",
+              "DocumentMoniker": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\HomeVM.cs",
+              "RelativeDocumentMoniker": "DealHubWPF\\ViewModel\\HomeVM.cs",
+              "ToolTip": "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHubWPF\\ViewModel\\HomeVM.cs",
+              "RelativeToolTip": "DealHubWPF\\ViewModel\\HomeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:14:13.805Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,147 @@
+﻿<UserControl x:Class="DealHubWPF.View.Chats"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DealHubWPF.View"
+             mc:Ignorable="d"
+  Background="White" Height="502" Width="867">
+
+    <Grid>
+        <StackPanel Margin="20">
+
+            <!-- Логотип + Іконки профілю -->
+            <Border CornerRadius="15" BorderThickness="1" Background="#EAC4C4" Height="47"  Margin="0,0,0,10">
+                <DockPanel Background="Transparent">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Button Command="{Binding RegUserCommand}" Style="{StaticResource RegButtons}" Background="Transparent" BorderThickness="0" Cursor="Hand">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Image Source="/Images/updatelogo.png" Width="69" Height="53" Margin="0,0,5,0" />
+                                <TextBlock Text="DealHub" 
+                                     FontSize="18" 
+                                     FontWeight="Bold" 
+                                     Margin="10,10,0,0" Width="103"
+                                     Foreground="Black"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Command="{Binding ProfileCommand}" Style ="{StaticResource LogButtons}" BorderThickness="0" Background="Transparent">
+                            <TextBlock Foreground="#65558F" FontFamily="Segoe MDL2 Assets" Text="&#xE77B;" FontSize="24" Margin="10"/>
+                        </Button>
+                        <Button BorderThickness="0" Background="Transparent">
+                            <TextBlock Foreground="#65558F"  FontFamily="Segoe MDL2 Assets" Text="&#xE8BD;" FontSize="24" Margin="10"/>
+                        </Button>
+                    </StackPanel>
+                </DockPanel>
+            </Border>
+
+
+            <!-- Панель профілю -->
+            <Border CornerRadius="15" BorderThickness="1" Background="#F0F0F0" Margin="10,5,10,0" Height="100" Width="713">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,10,0" Height="100">
+                    <Image Source="/Images/profileico.png" Width="106" Height="78" Margin="10"/>
+                    <TextBlock Text="Ім’я користувача" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Кнопки -->
+            <StackPanel Orientation="Horizontal" Margin="20,15,20,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Button Command="{Binding ProfileCommand}" Style="{StaticResource CategoryButtons}" Content="Мої оголошення" Width="150" Margin="0,0,10,0" Background="#7C4DFF" Foreground="White"/>
+                <Button Style="{StaticResource CategoryButtons}" Content="Чат" Width="100" Margin="0,0,10,0" Background="#9370DB" Foreground="White"/>
+                <Button Command="{Binding ReviewsCommand}" Style="{StaticResource CategoryButtons}" Content="Відгуки" Width="100" Background="#7C4DFF" Foreground="White"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- ОСНОВНИЙ КОНТЕНТ (ЧАТ) -->
+        <Grid Margin="20,250,20,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="7*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Список чатів -->
+            <StackPanel Grid.Column="0" Background="#FADADD">
+                <!-- Вкладки -->
+                <StackPanel Orientation="Horizontal" Background="#EFC0C0">
+                    <ToggleButton Content="Я покупець" Width="120" Height="30" FontWeight="Bold" />
+                    <ToggleButton Content="Я продавець" Width="128" Height="30" FontWeight="Bold" />
+                </StackPanel>
+
+                <!-- Список діалогів -->
+                <ListBox Background="Transparent">
+                    <ListBoxItem RenderTransformOrigin="0.5,0.5" Height="40" Width="221">
+                        <ListBoxItem.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.042"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="-0.582"/>
+                            </TransformGroup>
+                        </ListBoxItem.RenderTransform>
+                        <Border CornerRadius="15" Background="White" BorderThickness="1" Height="34" Width="211">
+                            <StackPanel Orientation="Horizontal" Height="33"  VerticalAlignment="Center" Margin="0,0,9,0">
+                                <Image Source="/Images/profileico.png" Width="50" Height="26" />
+                                <TextBox Background="Transparent" BorderThickness="0" Text="Ім'я" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="3,0,0,0" Width="155" Height="20"/>
+                            </StackPanel>
+                        </Border>
+                    </ListBoxItem>
+                    <ListBoxItem  BorderThickness="1" Background="Transparent" Height="40" Width="221">
+                        <Border CornerRadius="15" Background="#E0D5FF" BorderThickness="1" Height="34" Width="211">
+                            <StackPanel Orientation="Horizontal" Height="33"  VerticalAlignment="Center" Margin="0,0,9,0">
+                                <Image Source="/Images/profileico.png" Width="50" Height="26" />
+                                <TextBox Background="Transparent" BorderThickness="0" Text="Андрій" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="3,0,0,0" Width="155" Height="20"/>
+                            </StackPanel>
+                        </Border>
+                    </ListBoxItem>
+                </ListBox>
+            </StackPanel>
+
+            <!-- Вікно чату -->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+
+                <!-- Верхній бар -->
+                <DockPanel Background="#F4C7C3" Grid.Row="0" Margin="0,0,0,10">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Image Source="/Images/profileico.png" Width="27" Height="27" />
+                        <TextBlock Text="Андрій" VerticalAlignment="Center" Margin="10,0" />
+                    </StackPanel>
+                </DockPanel>
+
+                <!-- Повідомлення -->
+                <ScrollViewer Background="#EDE7F6" Margin="0,30,0,25" Grid.RowSpan="3">
+                    <StackPanel Margin="10">
+                        <!-- Вхідне -->
+                        <StackPanel Orientation="Horizontal" Margin="0,5">
+                            <Border CornerRadius="10" Background="White">
+                                <TextBox BorderThickness="0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="Текст повідомлення" Background="Transparent" FontSize="10" Width="126" Height="21"/>
+                            </Border>
+                        </StackPanel>
+                        <!-- Вихідне -->
+                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,5">
+                            <Border CornerRadius="10" Background="#EAC4C4">
+                                <TextBox BorderThickness="0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="Текст повідомлення" Background="Transparent" FontSize="10" Width="134" Height="21"/>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <!-- Ввід повідомлення -->
+                <DockPanel Grid.Row="2" Background="White" Margin="0,20,0,0">
+                    <Grid Width="578">
+                        <TextBox Text="Напишіть повідомлення..." FontSize="14" Height="29" />
+                        <Button Style="{StaticResource RegButtons}" Background="Transparent" BorderThickness="0"  HorizontalAlignment="Right" >
+                            <Image Source="/Images/sendmes.png" Height="23" Width="31"/>
+                        </Button>
+                    </Grid>
+                </DockPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
+

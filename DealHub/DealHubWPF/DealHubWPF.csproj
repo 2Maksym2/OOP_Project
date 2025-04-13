@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\minus.png" />
+    <None Remove="Images\plus.png" />
+    <None Remove="Images\profileico.png" />
+    <None Remove="Images\sendmes.png" />
+    <None Remove="Images\updatelogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DealHub\DealHub.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\image.png" />
+    <Resource Include="Images\minus.png" />
+    <Resource Include="Images\plus.png" />
+    <Resource Include="Images\profileico.png" />
+    <Resource Include="Images\sendmes.png" />
+    <Resource Include="Images\updatelogo.png" />
+  </ItemGroup>
+
+</Project>

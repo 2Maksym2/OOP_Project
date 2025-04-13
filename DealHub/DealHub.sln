@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealHub", "DealHub\DealHub.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDealHubProject", "TestDealHubProject\TestDealHubProject.csproj", "{68AB7716-EB96-4494-AE37-295DBCCC32C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealHubWPF", "DealHubWPF\DealHubWPF.csproj", "{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{68AB7716-EB96-4494-AE37-295DBCCC32C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68AB7716-EB96-4494-AE37-295DBCCC32C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68AB7716-EB96-4494-AE37-295DBCCC32C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F29E64-6642-4FE7-8EA5-D10F66DB472B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
