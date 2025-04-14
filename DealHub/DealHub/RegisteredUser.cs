@@ -93,9 +93,8 @@ namespace DealHub
 
             RegisteredUser.MessageForUser?.Invoke($"Оголошення \"{newTitle}\" успішно оновлене!");
         }
-        public void DeleteAd(DealHubSystem system, int adId)
+        public void DeleteAd(DealHubSystem system, Ad ad)
         {
-            Ad? ad = Ads.FirstOrDefault(a => a.Id == adId);
             if (ad == null)
             {
                 throw new Exception("\nОголошення не знайдено.");
@@ -116,7 +115,6 @@ namespace DealHub
             Message message = new Message(this.Nickname, receiver.Nickname, content);
             MessagesSent.Add(message);
             receiver.MessagesReceived.Add(message);
-            MessageForUser?.Invoke($"Повідомлення надіслано {receiver.Nickname}: \"{content}\"");
         }
         public List<User> ViewChats(int n, DealHubSystem system)
         {
@@ -154,25 +152,20 @@ namespace DealHub
 
             return new List<User>();
         }
-        public void ViewMessages(User receiver, User sender)
+        public List<Message> GetChatMessages(User receiver, User sender)
         {
             if (receiver == null || sender == null)
             {
                 throw new Exception("\nПомилка: один з користувачів не знайдений.");
             }
 
-            var chatMessages = MessagesReceived
+            var allMessages = MessagesReceived
                 .Where(m => m.senderNickname == receiver.Nickname)
                 .Concat(MessagesSent.Where(m => m.receiverNickname == receiver.Nickname))
                 .OrderBy(m => m.SentAt)
                 .ToList();
 
-            MessageForUser.Invoke($"\n Чат між {sender.Nickname} та {receiver.Nickname}:");
-            foreach (var message in chatMessages)
-            {
-                string name = message.senderNickname == sender.Nickname ? "Ви" : receiver.Nickname;
-                MessageForUser.Invoke($"[{message.SentAt}] {name}: {message.Content}");
-            }
+            return allMessages;
         }
         public void LeaveReview(RegisteredUser receiver, string content)
         {
@@ -184,20 +177,6 @@ namespace DealHub
             Review review = new Review(this.Nickname, content);
             receiver.Reviews.Add(review);
             MessageForUser?.Invoke($"Відгук для {receiver.Nickname} успішно додано!");
-        }
-        public void ViewReviews()
-        {
-            MessageForUser?.Invoke($"\nВідгуки про {Nickname}:");
-
-            if (reviews.Count == 0)
-            {
-                throw new Exception("\nНемає відгуків.");
-            }
-
-            foreach (var review in reviews)
-            {
-                MessageForUser?.Invoke($"[{review.CreatedAt}] {review.AuthorName}: {review.Content}");
-            }
         }
         public Complaint SendComplaint(DealHubSystem system, RegisteredUser? receiver, Ad? receiverAd, string description)
         {

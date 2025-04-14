@@ -35,8 +35,8 @@
                             <Setter TargetName="border" Property="Background" Value="#CCCCCC"/>
                             <Setter Property="Foreground" Value="#777"/>
                             <Setter Property="Cursor" Value="Arrow"/>
-                        </Trigger>                        
-                        </ControlTemplate.Triggers>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>

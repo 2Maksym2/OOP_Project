@@ -7,6 +7,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 
+                <ResourceDictionary Source="Styles/ItemBox.xaml"/>
                 <ResourceDictionary Source="Styles/LogButton.xaml"/>
                 <ResourceDictionary Source="Styles/CategoryButtons.xaml"/>
                 <ResourceDictionary Source="Styles/RegButtons.xaml"/>

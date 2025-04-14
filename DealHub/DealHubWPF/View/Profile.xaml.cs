@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DealHub;
+using DealHubWPF.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace DealHubWPF.View
 {
@@ -24,5 +27,33 @@ namespace DealHubWPF.View
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Будь ласка, заповніть всі поля!", "Помилка", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+                if (sender is Button btn && btn.DataContext is Ad adToRemove)
+                {
+                    if (this.DataContext is ProfileVM profileVm)
+                    {
+                        profileVm.DeleteAdCommand.Execute(adToRemove);
+                    }
+                }
+
+        }
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var border = sender as Border;
+            var adItem = border?.DataContext;
+
+            if (adItem != null && this.DataContext is HomeVM homeVm)
+            {
+                if (homeVm.AdPageCommand != null && homeVm.AdPageCommand.CanExecute(adItem))
+                {
+                    homeVm.AdPageCommand.Execute(adItem);
+                }
+            }
+        }
+
     }
 }

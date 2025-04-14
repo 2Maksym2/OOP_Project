@@ -3,21 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:DealHubWPF.View"
+             xmlns:local="clr-namespace:DealHubWPF"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              mc:Ignorable="d" d:DesignWidth="622" Height="600">
 
-    
+
     <Grid>
-        <ScrollViewer Background="White" VerticalScrollBarVisibility="Auto">
+        <ScrollViewer Background="White" VerticalScrollBarVisibility="Hidden">
             <StackPanel Margin="20">
 
                 <!-- Логотип + Іконки профілю -->
                 <Border CornerRadius="15" BorderThickness="1" Background="#EAC4C4" Height="47"  Margin="0,0,0,10">
                     <DockPanel Background="Transparent">
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                                <Image Source="/Images/updatelogo.png" Width="69" Height="53" Margin="0,0,5,0" />
-                                <TextBlock Text=" DealHub" FontSize="18" FontWeight="Bold" DockPanel.Dock="Left" Margin="5,10,0,0" Width="103"/>
-                            </StackPanel>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Image Source="/Images/updatelogo.png" Width="69" Height="53" Margin="0,0,5,0" />
+                            <TextBlock Text=" DealHub" FontSize="18" FontWeight="Bold" DockPanel.Dock="Left" Margin="5,10,0,0" Width="103"/>
+                        </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                             <Button Command="{Binding RegisterPageCommand}" Style ="{StaticResource LogButtons}" BorderThickness="0" Background="Transparent">
                                 <TextBlock Foreground="#65558F" FontFamily="Segoe MDL2 Assets" Text="&#xE77B;" FontSize="24" Margin="10"/>
@@ -39,58 +40,45 @@
                      BorderThickness="0"
                      FontSize="16"
                      VerticalContentAlignment="Center"
-                     Text="Пошук.." 
-                     Margin="0" />
-                            <!-- Кнопка всередині -->
-                            <Button Content="🔍"
-                    Width="35"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Center"
-                    Background="Transparent"
-                    BorderThickness="0"
-                    Cursor="Hand"/>
+                     Text="{Binding AdName, UpdateSourceTrigger=PropertyChanged}" Height="29" VerticalAlignment="Center" />
                         </Grid>
                     </Border>
                 </DockPanel>
                 <WrapPanel>
-                    <Button Content="Побутова техніка" Style="{StaticResource CategoryButtons}" Margin="8" Width="107"/>
-                    <Button Content="Електроніка" Style="{StaticResource CategoryButtons}" Margin="8" Width="78" />
-                    <Button Content="Одяг" Style="{StaticResource CategoryButtons}" Margin="8" Width="43" />
-                    <Button Content="Краса і здоров’я" Style="{StaticResource CategoryButtons}" Margin="8"  Width="100"/>
-                    <Button Content="Дім і сад" Style="{StaticResource CategoryButtons}" Margin="8"  Width="70"/>
-                    <Button Content="Дитячі товари" Style="{StaticResource CategoryButtons}" Margin="8"   Width="92"/>
-                    <Button Content="Спорт" Style="{StaticResource CategoryButtons}"   Margin="8" Width="52"/>
-                    <Button Content="Автотовари" Style="{StaticResource CategoryButtons}" Margin="8"  Width="89"/>
-                    <Button Content="Зоотовари" Style="{StaticResource CategoryButtons}" Margin="8"  Width="86"/>
+                    <Button x:Name="Побутова_техніка" Content="Побутова техніка" Style="{StaticResource CategoryButtons}" Margin="8" Width="107" Click="Button_Click"/>
+                    <Button x:Name="Електроніка" Content="Електроніка" Style="{StaticResource CategoryButtons}" Margin="8" Width="78" Click="Button_Click"/>
+                    <Button x:Name="Одяг" Content="Одяг" Style="{StaticResource CategoryButtons}" Margin="8" Width="43"  Click="Button_Click"/>
+                    <Button x:Name="Догляд_за_тілом" Content="Краса і здоров’я" Style="{StaticResource CategoryButtons}" Margin="8"  Width="100" Click="Button_Click"/>
+                    <Button x:Name="Дім_і_сад" Content="Дім і сад" Style="{StaticResource CategoryButtons}" Margin="8"  Width="70" Click="Button_Click"/>
+                    <Button x:Name="Дитячі_товари" Content="Дитячі товари" Style="{StaticResource CategoryButtons}" Margin="8"   Width="92" Click="Button_Click"/>
+                    <Button x:Name="Спорт" Content="Спорт" Style="{StaticResource CategoryButtons}"   Margin="8" Width="52" Click="Button_Click"/>
+                    <Button x:Name="Автотовари" Content="Автотовари" Style="{StaticResource CategoryButtons}" Margin="8"  Width="89" Click="Button_Click"/>
+                    <Button x:Name="Зоотовари" Content="Зоотовари" Style="{StaticResource CategoryButtons}" Margin="8"  Width="86" Click="Button_Click"/>
+                    <Button x:Name="Хобі_та_творчість" Content="Хобі" Style="{StaticResource CategoryButtons}" Margin="8" Width="44" Click="Button_Click"/>
+                    <Button x:Name="Інше" Content="Інше" Style="{StaticResource CategoryButtons}" Margin="8" Width="59" Click="Button_Click"/>
                 </WrapPanel>
 
                 <!-- Категорії -->
 
                 <!-- Товари -->
-                <ListBox Name="ItemsListBox" SelectionMode="Single" BorderThickness="0" Height="577" >
+                <ListBox ItemContainerStyle="{StaticResource ItemBox}" ItemsSource="{Binding Ads}" Name="ItemsListBox" SelectionMode="Single" BorderThickness="0" Height="Auto" Margin="40,0,0,0">
+
                     <ListBox.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <WrapPanel Orientation="Horizontal" />
+                            <UniformGrid Columns="3" />
                         </ItemsPanelTemplate>
                     </ListBox.ItemsPanel>
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <Border Margin="10">
-                                <Grid>
-                                    <Border Background="#EAC3C3" CornerRadius="15" Padding="10">
-                                        <StackPanel Orientation="Vertical" Width="330" HorizontalAlignment="Center">
-                                            <TextBox BorderThickness="0" Background="Transparent" TextWrapping="Wrap"
-                                                     Text="{Binding Title}" Margin="0 5"
-                                                     HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold" IsReadOnly="True"/>
-                                            <TextBox BorderThickness="0" Background="Transparent" TextWrapping="Wrap"
-                                                     Text="{Binding Price}" 
-                                                     HorizontalContentAlignment="Center" FontSize="18" FontWeight="SemiBold" IsReadOnly="True"/>
-                                            <TextBox BorderThickness="0" Background="Transparent" TextWrapping="Wrap"
-                                                     Text="{Binding Description}" 
-                                                     FontSize="14" TextAlignment="Center" IsReadOnly="True"/>
-                                        </StackPanel>
-                                    </Border>
-                                    <Image Source="{Binding Image}" Height="200" Width="290" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,67,0,0"/>
+                            <Border MouseLeftButtonDown="Border_MouseLeftButtonDown" Margin="0,0,0,30" BorderThickness="1" Background="#FADADD" Width="194" Height="251" CornerRadius="15">
+                                <Grid HorizontalAlignment="Center">
+                                    <StackPanel Margin="10" VerticalAlignment="Top">
+                                        <Image Source="{Binding Image}" Height="146" />
+                                        <TextBlock  FontSize="15" Background="Transparent"
+                                 Text="{Binding Title}" Margin="0,10,0,0" HorizontalAlignment="Center"
+                                 FontWeight="Bold" Width="152" Height="32"/>
+                                        <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Text="{Binding Price, StringFormat={}{0} грн}" Background="Transparent" FontSize="15" />
+                                    </StackPanel>
                                 </Grid>
                             </Border>
                         </DataTemplate>

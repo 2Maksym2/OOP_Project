@@ -44,19 +44,16 @@ namespace DealHub
             UserCount++;
         }
 
-        public List<Ad> Search(Category newcategory, string newtitle, DealHubSystem system)
+        public List<Ad> Search(Category? newcategory, string newtitle, DealHubSystem system)
         {
-            List<Ad> ads = new();
-            if (newcategory != 0 && newtitle != null)
-            { ads = system.AllAds.Where(a => a.Category == newcategory && a.Title.Contains(newtitle)).ToList(); }
-            else if (newcategory != 0 && newtitle == null)
-            {
-                ads = system.AllAds.Where(a => a.Category == newcategory).ToList();
-            }
-            else if (newcategory == 0 && newtitle != null)
-            {
-                ads = system.AllAds.Where(a => a.Title.Contains(newtitle)).ToList();
-            }
+            var ads = system.AllAds;
+
+            if (newcategory.HasValue)
+                ads = ads.Where(a => a.Category == newcategory.Value).ToList(); 
+
+            if (!string.IsNullOrWhiteSpace(newtitle))
+                ads = ads.Where(a => a.Title.Contains(newtitle, StringComparison.OrdinalIgnoreCase)).ToList(); 
+
             return ads;
         }
 

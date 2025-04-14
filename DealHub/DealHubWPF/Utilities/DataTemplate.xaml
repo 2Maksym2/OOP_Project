@@ -31,4 +31,21 @@
         <view:Reviews />
     </DataTemplate>
 
+    <DataTemplate DataType="{x:Type vm:AddAdVM}">
+        <view:AddAd />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AnotherUserReviewsVM}">
+        <view:AnotherUserReviews />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AnotherUserVM}">
+        <view:AnotherUserPage />
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type vm:AdPageVM}">
+        <view:AdPage />
+    </DataTemplate>
+
+
 </ResourceDictionary>

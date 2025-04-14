@@ -10,7 +10,7 @@
 
     <Grid>
 
-        <ScrollViewer Background="White" VerticalScrollBarVisibility="Auto">
+        <ScrollViewer Background="White" VerticalScrollBarVisibility="Hidden">
             <StackPanel Margin="20">
 
                 <!-- Логотип + Іконки профілю -->
@@ -55,27 +55,28 @@
                     <Button  Style="{StaticResource CategoryButtons}" Content="Відгуки" Width="100" Background="#9370DB" Foreground="White"/>
                 </StackPanel>
 
-                <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="20,10,20,80" Height="469">
-                    <StackPanel>
-                        <!-- Повторювана картка -->
-                        <Border Background="#F5F5F5" CornerRadius="10" Padding="10" Margin="0,0,0,10">
-                            <DockPanel VerticalAlignment="Center">
-                                <!-- Аватар -->
-                                <Image Source="/Images/profileico.png" Width="40" Height="40" Margin="0,0,10,0" />
-
-                                <!-- Ім’я та опис -->
+                <ScrollViewer Background="Transparent"  VerticalScrollBarVisibility="Hidden" Margin="0,15,0,30" Grid.RowSpan="2" Grid.Row="1">
+                    <ItemsControl ItemsSource="{Binding ReviewList}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
                                 <StackPanel>
-                                    <TextBlock Text="Ім’я" FontWeight="Bold" FontSize="14" />
-                                    <TextBlock Text="Опис відгуку" FontSize="13" Foreground="Gray" />
+                                    <Border Background="#D3D3D3" CornerRadius="10" Padding="10" Margin="0,0,0,10">
+                                        <DockPanel VerticalAlignment="Center">
+                                            <Image Source="/Images/profileico.png" Width="40" Height="40" Margin="0,0,10,0" />
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding AuthorName}" FontWeight="Bold" FontSize="14" />
+                                                <TextBlock Text="{Binding Content}" FontSize="13" Foreground="Gray" />
+                                            </StackPanel>
+                                        </DockPanel>
+                                    </Border>
+
                                 </StackPanel>
-                            </DockPanel>
-                        </Border>
-
-                        <!-- Можна повторювати блоки вище -->
-                    </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
                 </ScrollViewer>
-
             </StackPanel>
         </ScrollViewer>
     </Grid>
 </UserControl>
+

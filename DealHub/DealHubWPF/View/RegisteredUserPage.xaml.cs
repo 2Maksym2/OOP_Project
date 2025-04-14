@@ -1,5 +1,8 @@
-﻿using System;
+﻿using DealHub;
+using DealHubWPF.ViewModel;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +23,67 @@ namespace DealHubWPF.View
     /// </summary>
     public partial class RegisteredUserPage : UserControl
     {
+        public ObservableCollection<Ad> AdsForUser { get; set; }
+        public Button? _previousCategoryButton;
         public RegisteredUserPage()
         {
             InitializeComponent();
         }
+
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var border = sender as Border;
+            var adItem = border?.DataContext;
+
+            // Отримуємо DataContext сторінки, який є HomeVM
+            if (adItem != null && this.DataContext is RegisteredUserPageVM regpVM)
+            {
+                if (regpVM.AdPageCommand != null && regpVM.AdPageCommand.CanExecute(adItem))
+                {
+                    regpVM.AdPageCommand.Execute(adItem);
+                }
+            }
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string? name = null;
+            if (sender is Button clickedButton)
+            {
+                if (_previousCategoryButton != null)
+                {
+                    _previousCategoryButton.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#6A5ACD"));
+                }
+
+                if (_previousCategoryButton == clickedButton)
+                {
+                    _previousCategoryButton = null;
+                    name = null;
+                }
+
+                else
+                {
+                    clickedButton.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#9370DB"));
+                    _previousCategoryButton = clickedButton;
+                    name = clickedButton.Name;
+                }
+
+                if (this.DataContext is RegisteredUserPageVM regUserVm)
+                {
+                    Category? category = null;
+
+                    if (!string.IsNullOrWhiteSpace(name) && Enum.TryParse(typeof(Category), name, out var categoryObj) && categoryObj is Category parsed)
+                    {
+                        category = parsed;
+                    }
+
+                    if (regUserVm.SelectCategoryCommand != null && regUserVm.SelectCategoryCommand.CanExecute(category))
+                    {
+                        regUserVm.SelectCategoryCommand.Execute(category);
+                    }
+                }
+            }
+        }
+
+
     }
 }

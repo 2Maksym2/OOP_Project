@@ -9,9 +9,9 @@ namespace DealHub
 {
     public class DealHubSystem
     {
-        private const string UsersFile = "users.json";
-        private const string AdminsFile = "admins.json";
-        private const string ComplaintsFile = "complaints.json";
+        private const string UsersFile = "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\users.json";
+        private const string AdminsFile = "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\admins.json";
+        private const string ComplaintsFile = "D:\\labs\\Practice2\\OOP_Project\\DealHub\\DealHub\\bin\\Debug\\net8.0\\complaints.json";
 
         private List<RegisteredUser> users = new();
         private List<Admin> admins = new();
@@ -44,7 +44,6 @@ namespace DealHub
             {
                 Admin newAdmin = new Admin(nickname, password);
                 admins.Add(newAdmin);
-                SaveData();
                 MessageForUser?.Invoke($"Користувач {nickname} успішно зареєстрований!");
                 return newAdmin;
             }
@@ -55,6 +54,7 @@ namespace DealHub
                 MessageForUser?.Invoke($"Користувач {nickname} успішно зареєстрований!");
                 return newUser;
             }
+
 
         }
         public User? Login(string nickname, string password)
@@ -164,18 +164,6 @@ namespace DealHub
             catch (Exception)
             {
                 throw new Exception("Помилка збереження скарг");
-            }
-        }
-        public void UpdateUserData()
-        {
-            try
-            {
-                string usersJson = JsonConvert.SerializeObject(users, Formatting.Indented);
-                File.WriteAllText(UsersFile, usersJson);
-            }
-            catch (Exception)
-            {
-                throw new Exception("Помилка оновлення даних користувачів.");
             }
         }
     }

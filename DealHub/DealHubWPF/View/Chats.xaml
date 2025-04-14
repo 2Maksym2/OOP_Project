@@ -41,7 +41,7 @@
             <Border CornerRadius="15" BorderThickness="1" Background="#F0F0F0" Margin="10,5,10,0" Height="100" Width="713">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,10,0" Height="100">
                     <Image Source="/Images/profileico.png" Width="106" Height="78" Margin="10"/>
-                    <TextBlock Text="Ім’я користувача" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
+                    <TextBlock Text="{Binding UserName}" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
                 </StackPanel>
             </Border>
 
@@ -64,36 +64,28 @@
             <StackPanel Grid.Column="0" Background="#FADADD">
                 <!-- Вкладки -->
                 <StackPanel Orientation="Horizontal" Background="#EFC0C0">
-                    <ToggleButton Content="Я покупець" Width="120" Height="30" FontWeight="Bold" />
-                    <ToggleButton Content="Я продавець" Width="128" Height="30" FontWeight="Bold" />
+                    <Button x:Name="Buyer" Content="Я покупець" Width="124" Height="30" FontWeight="Bold"  Click="Button_Click"  />
+                    <Button Click="Button_Click"  Content="Я продавець" Width="124" Height="30" FontWeight="Bold"  />
                 </StackPanel>
 
                 <!-- Список діалогів -->
-                <ListBox Background="Transparent">
-                    <ListBoxItem RenderTransformOrigin="0.5,0.5" Height="40" Width="221">
-                        <ListBoxItem.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform AngleX="-1.042"/>
-                                <RotateTransform/>
-                                <TranslateTransform X="-0.582"/>
-                            </TransformGroup>
-                        </ListBoxItem.RenderTransform>
-                        <Border CornerRadius="15" Background="White" BorderThickness="1" Height="34" Width="211">
-                            <StackPanel Orientation="Horizontal" Height="33"  VerticalAlignment="Center" Margin="0,0,9,0">
-                                <Image Source="/Images/profileico.png" Width="50" Height="26" />
-                                <TextBox Background="Transparent" BorderThickness="0" Text="Ім'я" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="3,0,0,0" Width="155" Height="20"/>
-                            </StackPanel>
-                        </Border>
-                    </ListBoxItem>
-                    <ListBoxItem  BorderThickness="1" Background="Transparent" Height="40" Width="221">
-                        <Border CornerRadius="15" Background="#E0D5FF" BorderThickness="1" Height="34" Width="211">
-                            <StackPanel Orientation="Horizontal" Height="33"  VerticalAlignment="Center" Margin="0,0,9,0">
-                                <Image Source="/Images/profileico.png" Width="50" Height="26" />
-                                <TextBox Background="Transparent" BorderThickness="0" Text="Андрій" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="3,0,0,0" Width="155" Height="20"/>
-                            </StackPanel>
-                        </Border>
-                    </ListBoxItem>
+                <ListBox ItemsSource="{Binding UserChats}" Background="Transparent">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border MouseLeftButtonDown="Border_MouseLeftButtonDown" CornerRadius="15" Background="White" BorderThickness="1" Height="34" Width="211">
+                                <StackPanel Orientation="Horizontal" Height="33" VerticalAlignment="Center" Margin="0,0,9,0">
+                                    <Image Source="/Images/profileico.png" Width="50" Height="26" />
+                                    <TextBlock
+                        Background="Transparent"
+                        Text="{Binding Nickname}"
+                        VerticalAlignment="Center"
+                        Margin="3,0,0,0"
+                        Width="155"
+                        Height="20"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
 
@@ -106,36 +98,49 @@
                 </Grid.RowDefinitions>
 
                 <!-- Верхній бар -->
-                <DockPanel Background="#F4C7C3" Grid.Row="0" Margin="0,0,0,10">
+                <DockPanel Background="#F4C7C3" Grid.Row="0">
                     <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
                         <Image Source="/Images/profileico.png" Width="27" Height="27" />
-                        <TextBlock Text="Андрій" VerticalAlignment="Center" Margin="10,0" />
+                        <TextBlock Text="{Binding SelectedUserName}" VerticalAlignment="Center" Margin="10,0" />
                     </StackPanel>
                 </DockPanel>
 
                 <!-- Повідомлення -->
-                <ScrollViewer Background="#EDE7F6" Margin="0,30,0,25" Grid.RowSpan="3">
-                    <StackPanel Margin="10">
-                        <!-- Вхідне -->
-                        <StackPanel Orientation="Horizontal" Margin="0,5">
-                            <Border CornerRadius="10" Background="White">
-                                <TextBox BorderThickness="0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="Текст повідомлення" Background="Transparent" FontSize="10" Width="126" Height="21"/>
-                            </Border>
-                        </StackPanel>
-                        <!-- Вихідне -->
-                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,5">
-                            <Border CornerRadius="10" Background="#EAC4C4">
-                                <TextBox BorderThickness="0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Text="Текст повідомлення" Background="Transparent" FontSize="10" Width="134" Height="21"/>
-                            </Border>
-                        </StackPanel>
-                    </StackPanel>
+                <ScrollViewer Background="#D3D3D3" VerticalScrollBarVisibility="Hidden" Margin="0,0,0,30" Grid.RowSpan="2" Grid.Row="1">
+                    <ItemsControl ItemsSource="{Binding ChatMessagesForUI}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Border CornerRadius="15" Margin="5,5,5,5" Padding="10">
+                                        <Border.Style>
+                                            <Style TargetType="Border">
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IsFromCurrentUser}" Value="True">
+                                                        <Setter Property="Background" Value="#FADADD"/>
+                                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding IsFromCurrentUser}" Value="False">
+                                                        <Setter Property="Background" Value="White"/>
+                                                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Border.Style>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Content}" FontSize="14"/>
+                                            <TextBlock Text="{Binding SentAt}" FontSize="10" Foreground="Gray" HorizontalAlignment="Right"/>
+                                        </StackPanel>
+                                    </Border>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
                 </ScrollViewer>
-
                 <!-- Ввід повідомлення -->
                 <DockPanel Grid.Row="2" Background="White" Margin="0,20,0,0">
                     <Grid Width="578">
-                        <TextBox Text="Напишіть повідомлення..." FontSize="14" Height="29" />
-                        <Button Style="{StaticResource RegButtons}" Background="Transparent" BorderThickness="0"  HorizontalAlignment="Right" >
+                        <TextBox Text="{Binding MessageContent, UpdateSourceTrigger=PropertyChanged}" FontSize="14" Height="29" />
+                        <Button Style="{StaticResource RegButtons}" Background="Transparent" BorderThickness="0"  HorizontalAlignment="Right" Click="Button_Click_1" >
                             <Image Source="/Images/sendmes.png" Height="23" Width="31"/>
                         </Button>
                     </Grid>

@@ -10,7 +10,7 @@
 
     <Grid>
 
-        <ScrollViewer Background="White" VerticalScrollBarVisibility="Auto">
+        <ScrollViewer  Background="White" VerticalScrollBarVisibility="Hidden">
             <StackPanel Margin="20">
 
                 <!-- Логотип + Іконки профілю -->
@@ -42,9 +42,9 @@
 
                 <!-- Панель профілю -->
                 <Border CornerRadius="15" BorderThickness="1" Background="#F0F0F0" Margin="10,5,10,0" Height="100" Width="713">
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,10,0" Height="100">
+                    <StackPanel  Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,10,0" Height="100">
                         <Image Source="/Images/profileico.png" Width="106" Height="78" Margin="10"/>
-                        <TextBlock Text="Ім’я користувача" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
+                        <TextBlock  Text="{Binding UserName}" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
                     </StackPanel>
                 </Border>
 
@@ -57,40 +57,45 @@
 
                 <!-- Пошук -->
                 <Border BorderThickness="1" CornerRadius="15" Background="#D9D9D9" Height="30"  Margin="20,10,20,0">
-                    <TextBox BorderThickness="0"  Background="Transparent" VerticalAlignment="Center" 
-                 Text="Пошук..." Width="687" Height="20" />
+                    <TextBox BorderThickness="0"  Background="Transparent" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                 Text="{Binding AdName, UpdateSourceTrigger=PropertyChanged}" Width="751" Height="30" />
                 </Border>
+                <ListBox ItemContainerStyle="{StaticResource ItemBox}" ItemsSource="{Binding Ads}" Name="ItemsListBox" SelectionMode="Single" BorderThickness="0" Height="Auto" Margin="40,0,0,0">
+                  
+                    <!-- Картки товарів -->
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Columns="3" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border MouseLeftButtonDown="Border_MouseLeftButtonDown" Margin="0,0,0,30" BorderThickness="1" Background="#FADADD" Width="194" Height="251" CornerRadius="15">
+                                <Grid HorizontalAlignment="Center">
+                                    <StackPanel Margin="10" VerticalAlignment="Top">
+                                        <Image Source="{Binding Image}" Height="146" />
+                                        <TextBlock FontSize="15" Background="Transparent"
+                                        Text="{Binding Title}" Margin="0,10,0,0" HorizontalAlignment="Center"
+                                        FontWeight="Bold" Width="152" Height="32"/>
+                                        <TextBlock  FontWeight="Bold" HorizontalAlignment="Center" Text="{Binding Price, StringFormat={}{0} грн}" Background="Transparent" FontSize="15" />
+                                    </StackPanel>
+                                    <Border BorderThickness="1" Margin="0,0,0,10">
+                                        <Button Style="{StaticResource RegButtons}" BorderThickness="0" VerticalAlignment="Top" 
+                                     Background="Transparent" Foreground="Purple" Height="42" Margin="131,0,0,0" Click="Button_Click">
+                                            <Image Source="/Images/minus.png" Width="51" Height="42" RenderTransformOrigin="0.5,0.577"/>
+                                        </Button>
+                                    </Border>
 
-                <!-- Картки товарів -->
-                <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="20,10,20,80" Height="469">
-                    <WrapPanel Orientation="Horizontal" ItemWidth="200" ItemHeight="250">
-                        <!-- Повторювана картка -->
-                        <Border  BorderThickness="1" Background="#FADADD" Width="194" Height="251" CornerRadius="15">
-                            <Grid Margin="0,0,0,17" >
-                                <StackPanel  Margin="10,10,10,10" VerticalAlignment="Top">
-                                    <Image Source="/Images/image.png" Height="146" />
-                                    <TextBox BorderThickness="0" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" Text="Назва товару" Margin="0,10,0,0" HorizontalAlignment="Center" FontWeight="Bold" Width="152" Height="32"/>
-                                    <TextBox BorderThickness="0" HorizontalContentAlignment="Center" Text="Ціна" Background="Transparent"/>
-                                </StackPanel>
-                                <Border BorderThickness="1" Margin="0,0,0,10">
-                                    <Button Style="{StaticResource RegButtons}" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Top" 
-                                     Background="Transparent" Foreground="Purple" Height="42" Width="59">
-                                        <Image Source="/Images/minus.png" Width="51" Height="42"/>
-                                    </Button>
-                                </Border>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
 
-                            </Grid>
-                        </Border>
-                        <!-- Повторювана картка -->
-
-                        <!-- Можна додати ще картки тут -->
-
-                    </WrapPanel>
-                </ScrollViewer>
 
             </StackPanel>
         </ScrollViewer>
-        <Button Style="{StaticResource RegButtons}" Width="50" Height="50" 
+        <Button Command="{Binding AddAdCommand}" Style="{StaticResource RegButtons}" Width="50" Height="50" 
                 VerticalAlignment="Bottom" HorizontalAlignment="Right" 
                 Margin="0,0,30,20"
                 FontSize="28" Background="Transparent" Foreground="White"

@@ -9,21 +9,25 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Background="#B279FF">
     <Grid>
-        <Border Width="250" Height="350" Background="#E3D4F2" CornerRadius="8" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Border Width="250" Height="398" Background="#E3D4F2" CornerRadius="8" VerticalAlignment="Center" HorizontalAlignment="Center">
             <StackPanel Margin="20,45,20,20">
                 <TextBlock Text="Реєстрація" FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <Label Content="Ім’я" />
                 <Border Height="30" Background="#D3D3D3" BorderThickness="1" CornerRadius="10">
-                    <TextBox Background="Transparent" BorderBrush="Transparent"  Margin="0,5,0,-1" Text="Ім’я"/>
+                    <TextBox Background="Transparent" BorderBrush="Transparent"  Margin="0,5,0,-1" Text="{Binding Nickname, UpdateSourceTrigger=PropertyChanged}"/>
                 </Border>
+                <Label Content="Пароль" />
                 <Border Height="30" Background="#D3D3D3" BorderThickness="1" CornerRadius="10">
-                    <TextBox Background="Transparent" BorderBrush="Transparent"  Margin="0,5,0,-1" Text="Пароль"/>
+                    <TextBox Background="Transparent" BorderBrush="Transparent"  Margin="0,5,0,-1" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}"/>
                 </Border>
+                
                 <Button Style ="{StaticResource RegButtons}" Command="{Binding LoginCommand}" BorderThickness="0" Content="Вже є акаунт" Margin="0,10" />
                 <Border Margin="0,100,0,0" BorderThickness="1" Background="#A64DFF" CornerRadius="20">
-                    <Button Style="{StaticResource CategoryButtons}" Command="{Binding RegUserCommand}"  BorderThickness="0" Content="Зареєструватися" Background="Transparent" Foreground="White" Padding="5" Height="28" Width="190" />
+                    <Button Style="{StaticResource CategoryButtons}" Command="{Binding RegisterAndGoCommand}"  BorderThickness="0" Content="Зареєструватися" Background="Transparent" Foreground="White" Padding="5" Height="28" Width="190" />
                 </Border>
                 <Button  Style ="{StaticResource RegButtons}" Command="{Binding HomeCommand}" BorderThickness="0" Background="Transparent" Content="На головну"  Margin="30,0,30,0"/>
             </StackPanel>
         </Border>
     </Grid>
 </UserControl>
+    

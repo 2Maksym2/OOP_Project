@@ -24,6 +24,8 @@ namespace DealHubWPF.View
         public RegisterPage()
         {
             InitializeComponent();
+
         }
+
     }
 }

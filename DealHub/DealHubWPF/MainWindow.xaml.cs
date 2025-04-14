@@ -9,7 +9,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DealHub;
-using DealHubWPF.Model;
 using DealHubWPF.ViewModel;
 namespace DealHubWPF
 {
@@ -21,9 +20,10 @@ public partial class MainWindow : Window
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new NavigationVM();
             var system = new DealHubSystem();
-            system.LoadData();
+            DataContext = new NavigationVM(system);
+            system.LoadData();            
+            var navigationVM = new NavigationVM(system);
         }
     }
 }

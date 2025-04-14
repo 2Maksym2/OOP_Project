@@ -7,6 +7,18 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\AddAd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AnotherUserPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AnotherUserReviews.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Chats.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +48,9 @@
     <Page Update="Styles\CategoryButtons.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\ItemBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\LogButton.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -43,6 +58,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Utilities\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddAd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AnotherUserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AnotherUserReviews.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Chats.xaml">
