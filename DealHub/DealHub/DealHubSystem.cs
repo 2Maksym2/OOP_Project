@@ -29,7 +29,6 @@ namespace DealHub
         public void AddComplaint(Complaint complaint)
         {
             complaints.Add(complaint);
-            SaveData();
         }
         public User RegisterUser(string nickname, string password, bool? isAdmin)
         {

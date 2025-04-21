@@ -1,4 +1,4 @@
-﻿D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\App.xaml;;
 FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\MainWindow.xaml;;
 FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\Utilities\DataTemplate.xaml;;
@@ -13,4 +13,6 @@ FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\View\Profile.xaml;;
 FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\View\RegisteredUserPage.xaml;;
 FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\View\RegisterPage.xaml;;
 FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\View\Reviews.xaml;;
+FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\View\SendComplaint.xaml;;
+FD:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\View\SendReview.xaml;;
 

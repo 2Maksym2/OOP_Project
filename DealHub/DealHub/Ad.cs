@@ -14,7 +14,7 @@ namespace DealHub
         private string title;
         private string description;
         private double price;
-
+        private string image;
         public static int TotalAdsCreated { get; }
         public int Id { get; set; }
         public string Title
@@ -40,13 +40,16 @@ namespace DealHub
             get { return price; }
             set
             {
-                if (value < 0) throw new Exception("Ціна не може бути меншою за 0 грн");
+                if (value < 1) throw new Exception("Ціна не може бути меншою за 1 грн");
                 price = value;
             }
         }
         [JsonConverter(typeof(StringEnumConverter))]
         public Category Category { get; set; }
-        public string Image { get; set; }
+        public string Image {  
+            get => image;
+            set => image = value ?? "/Images/image.png";
+        }
         public bool IsActive { get; set; } = true;
         public string OwnerNickname { get; set; }
 

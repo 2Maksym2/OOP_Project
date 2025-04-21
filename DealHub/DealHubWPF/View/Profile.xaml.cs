@@ -46,11 +46,11 @@ namespace DealHubWPF.View
             var border = sender as Border;
             var adItem = border?.DataContext;
 
-            if (adItem != null && this.DataContext is HomeVM homeVm)
+            if (adItem != null && this.DataContext is ProfileVM profileVm)
             {
-                if (homeVm.AdPageCommand != null && homeVm.AdPageCommand.CanExecute(adItem))
+                if (profileVm.AdPageCommand != null && profileVm.AdPageCommand.CanExecute(adItem))
                 {
-                    homeVm.AdPageCommand.Execute(adItem);
+                    profileVm.AdPageCommand.Execute(adItem);
                 }
             }
         }

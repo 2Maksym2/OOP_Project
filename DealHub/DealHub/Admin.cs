@@ -83,9 +83,6 @@ namespace DealHub
                 }
                 MessageForUser?.Invoke($"Користувача {userToBan.Nickname} заблоковано.");
             }
-            // Оновлюємо дані 
-            system.SaveData();
-
         }
         public override void ShowMenu()
         {

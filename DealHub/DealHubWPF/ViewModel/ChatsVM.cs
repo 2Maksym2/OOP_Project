@@ -17,6 +17,8 @@ namespace DealHubWPF.ViewModel
         public ICommand RegUserCommand { get; }
         public ICommand ProfileCommand { get; }
         public ICommand ReviewsCommand { get; }
+        public ICommand AnotherUserCommand { get; }
+
         private RegisteredUser currentuser;
         private DealHubSystem _system;
         private List<User> _chats;
@@ -79,15 +81,18 @@ namespace DealHubWPF.ViewModel
                 OnPropertyChanged();
             }
         }
+        private readonly NavigationVM _navigation;
 
         public ChatsVM(NavigationVM navigation, DealHubSystem system, RegisteredUser CurrentUser)
         {
             _system = system;
             currentuser = CurrentUser;
+            _navigation = navigation;
             HomeCommand = navigation.HomeCommand;
             RegUserCommand = navigation.RegisteredUserPCommand;
             ProfileCommand = navigation.ProfileCommand;
             ReviewsCommand = navigation.ReviewsCommand;
+            AnotherUserCommand = navigation.AnotherUserCommand;
             UserName = currentuser.Nickname;
         }
         private bool _isBuyerSelected = false;
@@ -129,10 +134,11 @@ namespace DealHubWPF.ViewModel
 
         public void LoadMessages(User _selectedUser)
         {
-            if (_selectedUser != null)
+            if (_selectedUser != null && _selectedUser is RegisteredUser selectedUser)
             {
-                SelectedUser = _selectedUser;
-                var allMessages = currentuser.GetChatMessages(_selectedUser, currentuser);
+                SelectedUser = selectedUser;
+                _navigation.AnotherRegisteredUser = selectedUser;
+                var allMessages = currentuser.GetChatMessages(selectedUser, currentuser);
                 ChatMessagesForUI = allMessages.Select(m => new MessageViewModel(m, currentuser.Nickname)).ToList();
             }
         }
@@ -150,6 +156,11 @@ namespace DealHubWPF.ViewModel
             {
                 MessageBox.Show("" + ex.Message, "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        });
+        public ICommand SendC => new RelayCommand(obj =>
+        {
+            var ComplaintWindow = new View.SendComplaint(_navigation, _system, null);
+            ComplaintWindow.ShowDialog();
         });
 
     }

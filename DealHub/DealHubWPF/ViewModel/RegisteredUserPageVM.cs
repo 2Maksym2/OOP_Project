@@ -15,6 +15,7 @@ namespace DealHubWPF.ViewModel
         public ICommand ProfileCommand { get; }
         public ICommand ChatsCommand { get; }
         public ICommand AdPageCommand { get; }
+        private NavigationVM _navigation;
         public RegisteredUser CurrentUser { get; }
         private List<Ad> _ads;
         public List<Ad> Ads
@@ -33,6 +34,7 @@ namespace DealHubWPF.ViewModel
         {
             _system = system;
             CurrentUser = user;
+            _navigation = navigation;
             HomeCommand = navigation.HomeCommand;
             ChatsCommand = navigation.ChatsCommand;
             ProfileCommand = navigation.ProfileCommand;
@@ -67,6 +69,12 @@ namespace DealHubWPF.ViewModel
             Ads = CurrentUser.Search(SelectedCategory, AdName, _system).Where(a=> a.OwnerNickname != CurrentUser.Nickname).ToList();
         });
 
+        public ICommand GoAdPageCommand => new RelayCommand(obj =>
+        {
+            if (obj is Ad selectedAd)
+            _navigation.ad = selectedAd;
+            AdPageCommand.Execute(null);
+        });
 
         public ICommand SelectCategoryCommand => new RelayCommand(obj =>
         {

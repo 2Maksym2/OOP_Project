@@ -28,10 +28,17 @@ namespace DealHubWPF.ViewModel
             }
         }
 
+        private string _userName;
+        public string UserName
+        {
+            get => _userName;
+            private set => _userName = value;
+        }
 
         public ReviewsVM(NavigationVM navigation, RegisteredUser currentUser)
         {
             _currentuser = currentUser;
+            UserName = _currentuser.Nickname;
             HomeCommand = navigation.HomeCommand;
             RegUserCommand = navigation.RegisteredUserPCommand;
             ProfileCommand = navigation.ProfileCommand;

@@ -44,35 +44,40 @@
                 <Border CornerRadius="15" BorderThickness="1" Background="#F0F0F0" Margin="10,5,10,0" Height="100" Width="713">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,10,0" Height="100">
                         <Image Source="/Images/profileico.png" Width="106" Height="78" Margin="10"/>
-                        <TextBlock Text="Ім’я користувача" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
+                        <TextBlock Text="{Binding UserName}" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
                     </StackPanel>
                 </Border>
 
                 <!-- Кнопки -->
                 <StackPanel Orientation="Horizontal" Margin="20,15,20,0" VerticalAlignment="Top" HorizontalAlignment="Left">
                     <Button Style="{StaticResource CategoryButtons}" Content="Оголошення" Width="150" Margin="0,0,10,0" Background="#9370DB" Foreground="White"/>
-                    <Button Command="{Binding AnotherUserReviewsCommand}" Style="{StaticResource CategoryButtons}" Content="Відгуки" Width="100" Background="#7C4DFF" Foreground="White"/>
+                    <Button Command="{Binding ReviewsCommand}" Style="{StaticResource CategoryButtons}" Content="Відгуки" Width="100" Background="#7C4DFF" Foreground="White"/>
                 </StackPanel>
 
-               <!-- Картки товарів -->
-                <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="20,10,20,80" Height="469">
-                    <WrapPanel Orientation="Horizontal" ItemWidth="200" ItemHeight="250">
-                        <!-- Повторювана картка -->
-                        <Border  BorderThickness="1" Background="#FADADD" Width="194" Height="251" CornerRadius="15">
-                            <Grid Margin="0,0,0,17" >
-                                <StackPanel  Margin="10,10,10,10" VerticalAlignment="Top">
-                                    <Image Source="/Images/image.png" Height="146" />
-                                    <TextBox BorderThickness="0" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="Transparent" Text="Назва товару" Margin="0,10,0,0" HorizontalAlignment="Center" FontWeight="Bold" Width="152" Height="32"/>
-                                    <TextBox BorderThickness="0" HorizontalContentAlignment="Center" Text="Ціна" Background="Transparent"/>
-                                </StackPanel>
-                            </Grid>
-                        </Border>
-                        <!-- Повторювана картка -->
+                <!-- Картки товарів -->
+                <ListBox ItemContainerStyle="{StaticResource ItemBox}" ItemsSource="{Binding Ads}" Name="ItemsListBox" SelectionMode="Single" BorderThickness="0" Height="Auto" Margin="40,0,0,0">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid Columns="3" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border MouseLeftButtonDown="Border_MouseLeftButtonDown" Margin="0,0,0,30" BorderThickness="1" Background="#FADADD" Width="194" Height="251" CornerRadius="15">
+                                <Grid HorizontalAlignment="Center">
+                                    <StackPanel Margin="10" VerticalAlignment="Top">
+                                        <Image Source="{Binding Image}" Height="146" />
+                                        <TextBlock FontSize="15" Background="Transparent"
+                                        Text="{Binding Title}" Margin="0,10,0,0" HorizontalAlignment="Center"
+                                        FontWeight="Bold" Width="152" Height="32"/>
+                                        <TextBlock  FontWeight="Bold" HorizontalAlignment="Center" Text="{Binding Price, StringFormat={}{0} грн}" Background="Transparent" FontSize="15" />
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
 
-                        <!-- Можна додати ще картки тут -->
-
-                    </WrapPanel>
-                </ScrollViewer>
 
             </StackPanel>
         </ScrollViewer>

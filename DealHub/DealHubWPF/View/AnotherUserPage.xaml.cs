@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DealHubWPF.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +25,20 @@ namespace DealHubWPF.View
         {
             InitializeComponent();
         }
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var border = sender as Border;
+            var adItem = border?.DataContext;
+
+            // Отримуємо DataContext сторінки, який є HomeVM
+            if (adItem != null && this.DataContext is AnotherUserVM userVM)
+            {
+                if (userVM.GoAdPageCommand != null && userVM.GoAdPageCommand.CanExecute(adItem))
+                {
+                    userVM.GoAdPageCommand.Execute(adItem);
+                }
+            }
+        }
+
     }
 }

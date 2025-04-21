@@ -12,10 +12,12 @@ namespace DealHubWPF.ViewModel
 {
     class NavigationVM:ViewModelBase
     {
-        private readonly Ad ad;
+        public Ad ad;
         private readonly DealHubSystem _system;
         private object _currentView;
         public RegisteredUser? RegisteredUserToPass { get; set; }
+        public RegisteredUser? AnotherRegisteredUser { get; set; }
+
         public object CurrentView
         {
             set
@@ -36,6 +38,7 @@ namespace DealHubWPF.ViewModel
         public ICommand AnotherUserCommand { get; set; }
         public ICommand AnotherUserReviewsCommand { get; set; }
         public ICommand AdPageCommand { get; set; }
+        public ICommand OrderPageCommand { get; set; }
 
 
         private void Home(object obj) => CurrentView = new HomeVM(this, _system);
@@ -55,10 +58,11 @@ namespace DealHubWPF.ViewModel
         }
         public void Chats(object obj) => CurrentView = new ChatsVM(this, _system, RegisteredUserToPass);
         public void Rewies(object obj) => CurrentView = new ReviewsVM(this, RegisteredUserToPass);
-        public void AddAd(object obj) => CurrentView = new AddAdVM(this);
-        public void AnotherUser(object obj) => CurrentView = new AnotherUserVM(this);
-        public void AnotherUserReviews(object obj) => CurrentView = new AnotherUserReviewsVM(this);
-        public void AdPage(object obj) => CurrentView = new AdPageVM(this, ad);
+        public void AddAd(object obj) => CurrentView = new AddAdVM(this, RegisteredUserToPass, _system);
+        public void AnotherUser(object obj) => CurrentView = new AnotherUserVM(this, _system, AnotherRegisteredUser);
+        public void AnotherUserReviews(object obj) => CurrentView = new AnotherUserReviewsVM(this, AnotherRegisteredUser);
+        public void AdPage(object obj) => CurrentView = new AdPageVM(this, ad, _system, RegisteredUserToPass);
+        public void Order(object obj) => CurrentView = new OrderVM(this, ad, _system, RegisteredUserToPass);
 
         public NavigationVM(DealHubSystem system)
         {
@@ -72,6 +76,9 @@ namespace DealHubWPF.ViewModel
             ReviewsCommand = new RelayCommand(Rewies);
             AddAdCommand = new RelayCommand(AddAd);
             AdPageCommand = new RelayCommand(AdPage);
+            AnotherUserCommand = new RelayCommand(AnotherUser);
+            AnotherUserReviewsCommand = new RelayCommand(AnotherUserReviews);
+            OrderPageCommand = new RelayCommand(Order);
 
             //Startup Page
             CurrentView = new HomeVM(this, _system);

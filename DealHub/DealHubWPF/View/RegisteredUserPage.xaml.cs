@@ -38,9 +38,9 @@ namespace DealHubWPF.View
             // Отримуємо DataContext сторінки, який є HomeVM
             if (adItem != null && this.DataContext is RegisteredUserPageVM regpVM)
             {
-                if (regpVM.AdPageCommand != null && regpVM.AdPageCommand.CanExecute(adItem))
+                if (regpVM.GoAdPageCommand != null && regpVM.GoAdPageCommand.CanExecute(adItem))
                 {
-                    regpVM.AdPageCommand.Execute(adItem);
+                    regpVM.GoAdPageCommand.Execute(adItem);
                 }
             }
         }

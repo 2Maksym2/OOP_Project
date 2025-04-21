@@ -44,7 +44,7 @@
                 <Border CornerRadius="15" BorderThickness="1" Background="#F0F0F0" Margin="10,5,10,0" Height="100" Width="713">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,10,0" Height="100">
                         <Image Source="/Images/profileico.png" Width="106" Height="78" Margin="10"/>
-                        <TextBlock Text="Ім’я користувача" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
+                        <TextBlock Text="{Binding UserName}" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
                     </StackPanel>
                 </Border>
 

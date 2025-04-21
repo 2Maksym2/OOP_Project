@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DealHubWPF.ViewModel;
+using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,5 +26,30 @@ namespace DealHubWPF.View
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext is AddAdVM addadVm && addadVm._currentuser != null)
+            {
+                addadVm.AdAddCommand.Execute(null);
+            }
+
+        }
+
+        private void ChooseImage_Click(object sender, RoutedEventArgs e)
+        {
+            var openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files (*.png;*.jpg)|*.png;*.jpg|All files (*.*)|*.*";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string filePath = openFileDialog.FileName;
+                if (DataContext is AddAdVM vm)
+                {
+                    vm.Image = filePath; 
+                }
+            }
+        }
     }
 }
+

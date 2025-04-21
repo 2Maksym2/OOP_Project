@@ -26,7 +26,10 @@ namespace DealHubWPF.View
         public Chats()
         {
             InitializeComponent();
+            UserButton.IsEnabled = false;
+            UserButton1.IsEnabled = false;
         }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -37,17 +40,17 @@ namespace DealHubWPF.View
                 {
                     _previousbutton.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFDDDDDD"));
                 }
-                
-                    clickedButton.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("Gray"));
-                    _previousbutton = clickedButton;
-                
+
+                clickedButton.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("Gray"));
+                _previousbutton = clickedButton;
+
 
                 if (this.DataContext is ChatsVM chatVm)
                 {
 
                     if (clickedButton.Name == "Buyer")
                     {
-                        chatVm.IsBuyerSelected=true;
+                        chatVm.IsBuyerSelected = true;
                     }
                     else
                     {
@@ -61,18 +64,44 @@ namespace DealHubWPF.View
         {
             var border = sender as Border;
             var obj = border?.DataContext;
-            if(obj is User UserItem)
-            if (UserItem != null && this.DataContext is ChatsVM chatVm)
-            {
-                chatVm.LoadMessages(UserItem);
-            }
+            if (obj is User UserItem)
+                if (UserItem != null && this.DataContext is ChatsVM chatVm)
+                {
+                    chatVm.LoadMessages(UserItem);
+                    UserButton.IsEnabled = true;
+                    UserButton1.IsEnabled = true;
+                    MyScrollViewer.ScrollToEnd();
+                }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             if (this.DataContext is ChatsVM chatVm && chatVm.SelectedUser != null)
             {
+                chatVm.SendMessageCommand.Execute(null);
+                MyScrollViewer.ScrollToEnd();
+            }
+
+        }
+
+        private void TextBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                if (this.DataContext is ChatsVM chatVm && chatVm.SelectedUser != null)
+                {
                     chatVm.SendMessageCommand.Execute(null);
+                    MyScrollViewer.ScrollToEnd();
+                }
+
+            }
+        }
+
+        private void UserButton1_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext is ChatsVM Vm)
+            {
+                Vm.SendC.Execute(null);
             }
 
         }

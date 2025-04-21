@@ -4,12 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DealHubWPF.View"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-  Background="White">
+             mc:Ignorable="d" d:DesignWidth="622"
+  Background="White" Height="562">
 
     <Grid>
-        <StackPanel Margin="20">
+        <StackPanel Margin="20,20,20,10">
 
             <!-- Логотип + Іконки профілю -->
             <Border CornerRadius="15" BorderThickness="1" Background="#EAC4C4" Height="47"  Margin="0,0,0,10">
@@ -39,15 +38,15 @@
 
 
             <!-- Панель профілю -->
-            <Border CornerRadius="15" BorderThickness="1" Background="#F0F0F0" Margin="10,5,10,0" Height="100" Width="713">
+            <Border CornerRadius="15" BorderThickness="1" Background="#F0F0F0" Margin="10,5,10,0" Height="85" Width="713">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,10,0" Height="100">
                     <Image Source="/Images/profileico.png" Width="106" Height="78" Margin="10"/>
-                    <TextBlock Text="Ім’я користувача" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
+                    <TextBlock Text="{Binding UserName}" VerticalAlignment="Center" FontSize="20" Margin="20,0,0,0"/>
                 </StackPanel>
             </Border>
 
             <!-- Форма додавання товару -->
-            <Border Margin="0,20,0,0" Background="#F5C8D0" CornerRadius="15" Padding="20">
+            <Border Margin="0,10,0,0" Background="#F5C8D0" CornerRadius="15" Padding="20" Height="358">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="150"/>
@@ -59,30 +58,26 @@
                     <Button Style="{StaticResource RegButtons}" Background="Transparent">
 
                         <StackPanel Grid.Column="0" HorizontalAlignment="Center">
-                            <Image Source="/Images/image.png" Width="129" Height="149" Margin="0,0,0,10"/>
-                            <TextBlock Text="Додати фото" FontSize="13" HorizontalAlignment="Center"/>
+                            <Image Source="{Binding Image}" Width="155" Height="166" Margin="0,0,0,10"/>
+                            <Button Style="{StaticResource CategoryButtons}"  Content="Вибрати фото" Click="ChooseImage_Click" Width="110" Margin="0,10,0,0" Height="24"/>
                         </StackPanel>
                     </Button>
 
-        <!-- Інформація про товар -->
+                    <!-- Інформація про товар -->
                     <StackPanel Grid.Column="2" VerticalAlignment="Top">
-                        <TextBlock Text="Вкажіть назву продукту" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <TextBlock Text="Вкажіть кількість для продажу" FontSize="13" Margin="0,0,0,3"/>
-                        <TextBlock Text="Вкажіть ціну для продажу" FontSize="13" Margin="0,0,0,3"/>
-                        <TextBlock Text="Оберіть категорію продукту" FontSize="13" Margin="0,0,0,3"/>
+                        <Label Content="Вкажіть назву продукту" />
+                        <TextBox Background="Transparent" HorizontalAlignment="Left"  Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold" Margin="0,0,0,5" Width="293"/>
+                        <Label Content="Вкажіть ціну для продажу" />
 
+                        <TextBox Background="Transparent" Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}" FontSize="13" Margin="0,0,0,3"/>
+                        <Label Content="Оберіть категорію продукту" />
                         <!-- Випадаючий список -->
-                        <ComboBox HorizontalAlignment="Left" Width="207" Text="Категорія">
-                            <ComboBoxItem Content="Електроніка"/>
-                            <ComboBoxItem Content="Одяг"/>
-                            <ComboBoxItem Content="Книги"/>
-                            <ComboBoxItem Content="Техніка"/>
-                            <!-- Категорії можна динамічно додавати -->
+                        <ComboBox  ItemsSource="{Binding Categories}"   SelectedItem="{Binding SelectedCategory, Mode=TwoWay}"  HorizontalAlignment="Left" Width="207" Text="Категорія">
                         </ComboBox>
-
-                        <TextBlock Text="Додайте детальний опис продукту (не обов’язково)" FontSize="13" Margin="0,5" Height="21"/>
+                        <Label Content="Додайте детальний опис продукту (не обов’язково)"/>
+                        <TextBox Background="Transparent" TextWrapping="Wrap" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" FontSize="13" Margin="0,5" Height="24"/>
                         <!-- Кнопка додавання -->
-                        <Button Command="{Binding RegUserCommand}" Style="{StaticResource CategoryButtons}" Content="Додати оголошення" Width="160" Height="28" Background="#9B59B6" Foreground="White" Margin="0,20,0,0" BorderThickness="0" HorizontalAlignment="Right" />
+                        <Button Style="{StaticResource CategoryButtons}" Content="Додати оголошення" Width="160" Height="28" Background="#9B59B6" Foreground="White" Margin="0,50,0,0" BorderThickness="0" HorizontalAlignment="Right" Click="Button_Click" />
 
                     </StackPanel>
                 </Grid>

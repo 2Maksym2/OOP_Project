@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestDealHubProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7dade9dd2523fdf9f8484acbb68e07a16c8d1a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f4960d7def02a2a31c07adfa076d04cc7ef7db8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestDealHubProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestDealHubProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

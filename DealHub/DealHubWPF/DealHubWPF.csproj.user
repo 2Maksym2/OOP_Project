@@ -28,6 +28,9 @@
     <Compile Update="View\LoginPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\Order.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Profile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +38,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\RegisterPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SendComplaint.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SendReview.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Reviews.xaml.cs">
@@ -81,6 +90,9 @@
     <Page Update="View\LoginPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\Order.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Profile.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -88,6 +100,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\RegisterPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SendComplaint.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SendReview.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Reviews.xaml">

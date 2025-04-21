@@ -95,15 +95,13 @@ namespace DealHub
         }
         public void DeleteAd(DealHubSystem system, Ad ad)
         {
-            if (ad == null)
+            if (ad == null || !Ads.Contains(ad) || !system.AllAds.Contains(ad))
             {
                 throw new Exception("\nОголошення не знайдено.");
             }
 
             Ads.Remove(ad);
             system.AllAds.Remove(ad);
-
-            RegisteredUser.MessageForUser?.Invoke("Оголошення видалено.");
         }
         public void SendMessage(RegisteredUser receiver, string content)
         {

@@ -1,7 +1,9 @@
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHubWPF.csproj.AssemblyReference.cache
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\Styles\CategoryButtons.baml
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\Styles\ItemBox.baml
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\Styles\LogButton.baml
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\Styles\RegButtons.baml
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\Order.baml
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AddAd.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdPage.g.cs
@@ -10,15 +12,16 @@ D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\A
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\Chats.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\Home.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\LoginPage.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\Order.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\Profile.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\RegisteredUserPage.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\RegisterPage.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\Reviews.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\SendReview.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\App.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHubWPF_MarkupCompile.cache
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHubWPF_MarkupCompile.lref
-D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\Styles\CategoryButtons.baml
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\bin\Debug\net8.0-windows\DealHub.deps.json
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\bin\Debug\net8.0-windows\DealHub.runtimeconfig.json
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\bin\Debug\net8.0-windows\DealHub.exe
@@ -44,6 +47,7 @@ D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\P
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\RegisteredUserPage.baml
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\RegisterPage.baml
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\Reviews.baml
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\SendReview.baml
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHubWPF.g.resources
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHubWPF.GeneratedMSBuildEditorConfig.editorconfig
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHubWPF.AssemblyInfoInputs.cache
@@ -56,3 +60,5 @@ D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\refint
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHubWPF.pdb
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHubWPF.genruntimeconfig.cache
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\ref\DealHubWPF.dll
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\SendComplaint.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\SendComplaint.baml

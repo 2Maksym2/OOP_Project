@@ -47,5 +47,8 @@
         <view:AdPage />
     </DataTemplate>
 
+    <DataTemplate DataType="{x:Type vm:OrderVM}">
+        <view:Order />
+    </DataTemplate>
 
 </ResourceDictionary>

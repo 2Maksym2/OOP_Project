@@ -31,6 +31,26 @@
         "Image": "https://cdn4.riastatic.com/photosnew/auto/photo/skoda_octavia__591821104bx.webp",
         "IsActive": true,
         "OwnerNickname": "Maxim079"
+      },
+      {
+        "Id": 11,
+        "Title": "Коробка",
+        "Description": "Найдорожча коробка у вашому житті",
+        "Price": 50000.0,
+        "Category": "Інше",
+        "Image": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\Windows\\INetCache\\IE\\NYD14378\\39705837993303[1].png",
+        "IsActive": true,
+        "OwnerNickname": "Maxim079"
+      },
+      {
+        "Id": 12,
+        "Title": "Продам слона",
+        "Description": "КУПИ СЛОНА НЕДОРОГО!",
+        "Price": 150000.0,
+        "Category": "Зоотовари",
+        "Image": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\Windows\\INetCache\\IE\\2WJQYRFM\\1200px-Elephant_near_ndutu[1].jpg",
+        "IsActive": true,
+        "OwnerNickname": "Maxim079"
       }
     ],
     "MessagesSent": [
@@ -39,6 +59,42 @@
         "senderNickname": "Maxim079",
         "Content": "Привіт, якщо хочеш замовити смартфон оформлюй замовлення!",
         "SentAt": "2025-04-15T01:06:54.9093714+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "Привіт",
+        "SentAt": "2025-04-15T12:23:33.5481986+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "Перевірка ScrolViewer",
+        "SentAt": "2025-04-17T18:08:24.0173106+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": ":D",
+        "SentAt": "2025-04-17T18:08:33.3817669+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "Перевірка ScrolViewer2",
+        "SentAt": "2025-04-17T18:57:05.0133202+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "Перевірка chat AdPage ",
+        "SentAt": "2025-04-21T16:09:25.537251+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "№2",
+        "SentAt": "2025-04-21T16:09:36.8346601+03:00"
       }
     ],
     "MessagesReceived": [
@@ -114,6 +170,42 @@
         "senderNickname": "Maxim079",
         "Content": "Привіт, якщо хочеш замовити смартфон оформлюй замовлення!",
         "SentAt": "2025-04-15T01:06:54.9093714+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "Привіт",
+        "SentAt": "2025-04-15T12:23:33.5481986+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "Перевірка ScrolViewer",
+        "SentAt": "2025-04-17T18:08:24.0173106+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": ":D",
+        "SentAt": "2025-04-17T18:08:33.3817669+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "Перевірка ScrolViewer2",
+        "SentAt": "2025-04-17T18:57:05.0133202+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "Перевірка chat AdPage ",
+        "SentAt": "2025-04-21T16:09:25.537251+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "№2",
+        "SentAt": "2025-04-21T16:09:36.8346601+03:00"
       }
     ],
     "Reviews": [
@@ -165,7 +257,7 @@
       {
         "receiverNickname": "Zubaref",
         "senderNickname": "PashaT",
-        "Content": "\nДобрий день! Я оформив замовлення на Нова шуба норкова, розмір M.\nМої контактні дані для зв'яку: \nПІБСидоренко  Павел  Іванович\nМій номер: +380 995088302\nАдреса доставки: Поштомат №45120",
+        "Content": "\nДобрий день! Я оформив замовлення на Нова шуба норкова, розмір M.\nМої контактні дані для зв'яку: \nПІБ Сидоренко  Павел  Іванович\nМій номер: +380 995088302\nАдреса доставки: Поштомат №45120",
         "SentAt": "2025-04-01T00:59:02.8585783+03:00"
       }
     ],

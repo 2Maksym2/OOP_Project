@@ -106,14 +106,14 @@ namespace TestDealHubProject
             var user = new RegisteredUser("User", "pasword");
             system.AllAds.AddRange(new List<Ad>
         {
-                new Ad { Category = Category.Електроніка, Title = "iPhone 13 Pro" },
+            new Ad { Category = Category.Електроніка, Title = "iPhone 13 Pro" },
             new Ad { Category = Category.Електроніка, Title = "Samsung Galaxy S21" },
             new Ad { Category = Category.Автотовари, Title = "Toyota Corolla 2020" },
             new Ad { Category = Category.Автотовари, Title = "Tesla Model S" },
             new Ad { Category = Category.Одяг, Title = "Nike Air Max" }
         });
             // Act
-            var result = user.Search(0, "iPhone", system);
+            var result = user.Search(null, "iPhone", system);
 
             // Assert
             Assert.AreEqual(1, result.Count);
@@ -227,24 +227,23 @@ namespace TestDealHubProject
             var user = new RegisteredUser("User1", "pasword");
 
             user.CreateAd(system, "Ad to Delete", "Description", Category.Автотовари, "car.jpg", 20000.0, user);
-            int adId = system.AllAds[0].Id;
             //Act
-            user.DeleteAd(system, adId);
+            user.DeleteAd(system, system.AllAds[0]);
             //Assert
             Assert.AreEqual(0, system.AllAds.Count);
         }
+      
         [TestMethod]
         public void TestDeleteAd_AdNotFound()
         {
-            //Arrange
+            // Arrange
             var system = new DealHubSystem();
-            var user = new RegisteredUser("User1", "pasword");
-            user.CreateAd(system, "Ad to Delete", "Description", Category.Автотовари, "car.jpg", 20000.0, user);
-            int adId = system.AllAds[0].Id;
+            var user = new RegisteredUser("User1", "password");
 
-            //Act + Assert
-            Assert.ThrowsException<Exception>(() => user.DeleteAd(system, 999));
+            Ad nonExistentAd = new Ad(); // створюємо фейкове оголошення, яке не додано до system чи user
 
+            // Act + Assert
+           Assert.ThrowsException<Exception>(() => user.DeleteAd(system, nonExistentAd));
         }
 
 

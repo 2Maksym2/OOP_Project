@@ -17,7 +17,9 @@ namespace DealHubWPF.ViewModel
         public ICommand ChatsCommand { get; }
         public ICommand RegUserPageCommand { get; }
         public ICommand AddAdCommand { get; }
-        public  DealHubSystem _system;
+        public ICommand AdPageCommand { get; }
+
+        public DealHubSystem _system;
         private  RegisteredUser _currentuser;
         private List<Ad> _ads;
         public List<Ad> Ads
@@ -45,6 +47,7 @@ namespace DealHubWPF.ViewModel
             ChatsCommand = navigation.ChatsCommand;
             ReviewsCommand = navigation.ReviewsCommand;
             AddAdCommand = navigation.AddAdCommand;
+            AdPageCommand = navigation.AdPageCommand;
             UserName = user.Nickname;
             Ads = system.AllAds.Where(a => a.OwnerNickname == UserName).ToList();
         }
