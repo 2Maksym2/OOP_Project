@@ -14,6 +14,10 @@ namespace DealHub
             IsAdmin = true;
         }
 
+        public  override List<Ad> ViewAds(DealHubSystem system)
+        {
+            return system.AllAds;
+        }
         public bool ViewComplaints(DealHubSystem system)
         {
             if (system.Complaints.Count == 0)
@@ -42,9 +46,8 @@ namespace DealHub
             MessageForUser?.Invoke($"Скарга успішно розглянута і видалена.");
             return true;
         }
-        public void DeleteAd(DealHubSystem system, int adId)
+        public void DeleteAd(DealHubSystem system, Ad adToDelete)
         {
-            Ad? adToDelete = system.AllAds.FirstOrDefault(a => a.Id == adId);
             if (adToDelete == null)
             {
                 throw new Exception("\nОголошення не знайдено");
@@ -69,9 +72,14 @@ namespace DealHub
             {
                 throw new Exception("\nКористувача не знайдено");
             }
-            else if (userToBan.BlockedTime > DateTime.Now)
+            if (EndBan <= DateTime.Now)
             {
-                throw new Exception("Користувача вже заблоковано");
+                throw new Exception("Дата блокування повинна бути пізніше поточного часу.");
+            }
+
+            if (userToBan.IsBlocked)
+            {
+                throw new Exception("Користувача вже заблоковано.");
             }
             // Блокуємо користувача та деактивуємо його оголошення
             else
@@ -83,16 +91,6 @@ namespace DealHub
                 }
                 MessageForUser?.Invoke($"Користувача {userToBan.Nickname} заблоковано.");
             }
-        }
-        public override void ShowMenu()
-        {
-            MessageForUser?.Invoke("Меню");
-            MessageForUser?.Invoke("1.Проглянути оголошення");
-            MessageForUser?.Invoke("2.Проглянути користувачів");
-            MessageForUser?.Invoke("3.Проглянути скарги");
-            MessageForUser?.Invoke("4.Вийти");
-            MessageForUser?.Invoke("0.Закрити програму");
-
         }
     }
 }

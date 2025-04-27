@@ -198,9 +198,9 @@ namespace TestDealHubProject
             var system = new DealHubSystem();
             var user = new RegisteredUser("User1", "pasword");
             user.CreateAd(system, "Old Title", "Old Description", Category.Електроніка, "image.jpg", 500.0, user);
-            int adId = system.AllAds[0].Id;
+            Ad ad = system.AllAds[0];
             //Act
-            user.EditAd(adId, "New Title", "New Description");
+            user.EditAd(ad, "New Title", "New Description", Category.Електроніка, "image.jpg", 500.0, true);
             //Assert
             Assert.AreEqual("New Title", system.AllAds[0].Title);
         }
@@ -211,10 +211,10 @@ namespace TestDealHubProject
             var system = new DealHubSystem();
             var user = new RegisteredUser("User1", "pasword");
             user.CreateAd(system, "Old Title", "Old Description", Category.Електроніка, "image.jpg", 500.0, user);
-            int adId = system.AllAds[0].Id;
+            Ad? ad = null;
 
             //Act + Assert
-            Assert.ThrowsException<Exception>(() => user.EditAd(999, "New Title", "New Description"));
+            Assert.ThrowsException<Exception>(() => user.EditAd(ad, "New Title", "New Description", Category.Електроніка, "image.jpg", 500.0, true));
 
         }
 
@@ -240,7 +240,7 @@ namespace TestDealHubProject
             var system = new DealHubSystem();
             var user = new RegisteredUser("User1", "password");
 
-            Ad nonExistentAd = new Ad(); // створюємо фейкове оголошення, яке не додано до system чи user
+            Ad nonExistentAd = new Ad(); 
 
             // Act + Assert
            Assert.ThrowsException<Exception>(() => user.DeleteAd(system, nonExistentAd));
@@ -409,7 +409,7 @@ namespace TestDealHubProject
             system.AllAds.Add(ad);
 
             // Act
-            admin.DeleteAd(system, ad.Id);
+            admin.DeleteAd(system, ad);
 
             // Assert
             Assert.IsFalse(system.AllAds.Contains(ad));
@@ -423,7 +423,7 @@ namespace TestDealHubProject
             var admin = new Admin("Admin", "password");
 
             // Act + Assert
-            Assert.ThrowsException<Exception>(() => admin.DeleteAd(system, 999));
+            Assert.ThrowsException<Exception>(() => admin.DeleteAd(system, null));
         }
         [TestMethod]
         public void BanUser_ShouldBanUser()

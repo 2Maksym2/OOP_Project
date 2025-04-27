@@ -162,6 +162,14 @@ namespace DealHubWPF.ViewModel
             var ComplaintWindow = new View.SendComplaint(_navigation, _system, null);
             ComplaintWindow.ShowDialog();
         });
+        public ICommand Quit => new RelayCommand(obj =>
+        {
+            _navigation.RegisteredUserToPass = null;
+            _navigation.ad = null;
+            _navigation.AnotherRegisteredUser = null;
+            HomeCommand.Execute(null);
+        });
+
 
     }
 }

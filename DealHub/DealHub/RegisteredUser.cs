@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using static DealHub.IManageAds;
 
 namespace DealHub
@@ -10,39 +11,24 @@ namespace DealHub
     public class RegisteredUser : User, IManageAds
     {
         private DateTime blockedTime;
-        public DateTime BlockedTime
-        {
-            get { return blockedTime; }
-            set
-            {
-
-                if (BlockedTime > DateTime.Now)
-                {
-                    throw new Exception("Користувача вже заблоковано.");
-                }
-
-                blockedTime = value;
-            }
-        }
+        public DateTime BlockedTime { get; set; }
+        [JsonIgnore]
+        public bool IsBlocked => DateTime.Now < BlockedTime;
         private List<Review> reviews = new List<Review>();
         private List<Ad> ads = new List<Ad>();
         private List<Message> messagesSent = new List<Message>();
         private List<Message> messagesReceived = new List<Message>();
-
 
         public static event Action<string> MessageForUser;
         public List<Ad> Ads => ads;
         public List<Message> MessagesSent => messagesSent;
         public List<Message> MessagesReceived => messagesReceived;
         public List<Review> Reviews => reviews;
-
-
         public RegisteredUser(string nickname, string password) : base(nickname, password) { }
 
 
-        public List<Ad> ViewMyAds()
+        public override List<Ad> ViewAds(DealHubSystem system)
         {
-            // Копіюємо список оголошень користувача для індексації
             var userAds = this.Ads.ToList();
             return userAds;
         }
@@ -80,9 +66,8 @@ namespace DealHub
 
             RegisteredUser.MessageForUser?.Invoke($"Оголошення \"{title}\" успішно створене!");
         }
-        public void EditAd(int adId, string newTitle, string newDescription)
+        public void EditAd(Ad ad, string newTitle, string newDescription, Category newcategory, string newimage, double newprice, bool active)
         {
-            Ad? ad = Ads.FirstOrDefault(a => a.Id == adId);
             if (ad == null)
             {
                 throw new Exception("\nОголошення не знайдено.");
@@ -90,6 +75,10 @@ namespace DealHub
 
             ad.Title = newTitle;
             ad.Description = newDescription;
+            ad.Price = newprice;
+            ad.Category = newcategory;
+            ad.Image = newimage;
+            ad.IsActive = active;
 
             RegisteredUser.MessageForUser?.Invoke($"Оголошення \"{newTitle}\" успішно оновлене!");
         }
@@ -191,16 +180,6 @@ namespace DealHub
             system.AddComplaint(complaint);
             MessageForUser?.Invoke($"Скарга подана від {Nickname} на {(receiver != null ? $"користувача {receiver.Nickname}" : $"оголошення {receiverAd.Title}")}.");
             return complaint;
-        }
-        public override void ShowMenu()
-        {
-            MessageForUser?.Invoke("Меню");
-            MessageForUser?.Invoke("1.Проглянути оголошення");
-            MessageForUser?.Invoke("2.Робота з моїми оголошеннями");
-            MessageForUser?.Invoke("3.Чат");
-            MessageForUser?.Invoke("4.Переглянути відгуки");
-            MessageForUser?.Invoke("5.Вийти");
-            MessageForUser?.Invoke("0.Закрити програму");
         }
 
     }

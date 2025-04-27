@@ -79,5 +79,14 @@ namespace DealHubWPF.View
             }
 
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext is AdPageVM Vm)
+            {
+                Vm.Order.Execute(null);
+            }
+
+        }
     }
 }

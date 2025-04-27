@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DealHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f4960d7def02a2a31c07adfa076d04cc7ef7db8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d6a2b2c9dbd1e5c644b89b90246a1d6a58ba279")]
 [assembly: System.Reflection.AssemblyProductAttribute("DealHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DealHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -15,6 +15,8 @@ namespace DealHubWPF.ViewModel
         public ICommand HomeCommand { get; }
         public ICommand RegisterPageCommand { get; }
         public ICommand RegUserCommand { get; }
+        public ICommand AdminPanelCommand { get; }
+
         public User? currentUser { get; set; } = null;
         public DealHubSystem _system;
         private readonly NavigationVM _navigation;
@@ -24,6 +26,7 @@ namespace DealHubWPF.ViewModel
             HomeCommand = navigation.HomeCommand;
             RegisterPageCommand = navigation.RegisterPageCommand;
             RegUserCommand = navigation.RegisteredUserPCommand;
+            AdminPanelCommand = navigation.AdminPanelCommand;
             _system = system;
             _navigation = navigation;
         }
@@ -41,7 +44,7 @@ namespace DealHubWPF.ViewModel
             set { _password = value; OnPropertyChanged(); }
         }
 
-        public RegisteredUser LoginUser()
+        public User LoginUser()
         {
             if (string.IsNullOrWhiteSpace(Nickname) || string.IsNullOrWhiteSpace(Password))
             {
@@ -50,12 +53,7 @@ namespace DealHubWPF.ViewModel
             }
             try
             {
-                currentUser = _system.Login(Nickname, Password);
-                if (currentUser is RegisteredUser regUser)
-                {
-                    _system.SaveData();
-                    return regUser;
-                }
+                return currentUser = _system.Login(Nickname, Password);
             }
             catch (Exception ex)
             {
@@ -69,12 +67,18 @@ namespace DealHubWPF.ViewModel
 
         private void LoginAndNavigate()
         {
-            var user = LoginUser();
-            if (user != null)
+            User? user = LoginUser();
+            if (user != null && user is RegisteredUser reguser)
             {
-                _navigation.RegisteredUserToPass = user;
+                _navigation.RegisteredUserToPass = reguser;
                 RegUserCommand.Execute(null);
             }
+            else if (user is Admin admin)
+            {
+                _navigation.Admin = admin;
+                AdminPanelCommand.Execute(null);
+            }
+
         }
 
     }

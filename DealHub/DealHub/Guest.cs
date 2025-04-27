@@ -10,15 +10,9 @@ namespace DealHub
     public class Guest : User
     {
         public Guest() { }
-        public static event Action<string> MessageForUser;
-        public override void ShowMenu()
+        public override List<Ad> ViewAds(DealHubSystem system)
         {
-            MessageForUser?.Invoke("Меню");
-            MessageForUser?.Invoke("1.Проглянути оголошення");
-            MessageForUser?.Invoke("2.Зареєструватися");
-            MessageForUser?.Invoke("3.Увійти");
-            MessageForUser?.Invoke("0.Закрити програму");
-
+            return system.AllAds.Where(m=> m.IsActive == true).ToList();
         }
     }
 }

@@ -30,7 +30,7 @@ namespace DealHubWPF.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Будь ласка, заповніть всі поля!", "Помилка", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = MessageBox.Show("Ви впевнені, що хочете видалити це оголошення?", "Підтвердження", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
                 if (sender is Button btn && btn.DataContext is Ad adToRemove)
                 {
@@ -48,12 +48,20 @@ namespace DealHubWPF.View
 
             if (adItem != null && this.DataContext is ProfileVM profileVm)
             {
-                if (profileVm.AdPageCommand != null && profileVm.AdPageCommand.CanExecute(adItem))
+                if (profileVm.AdUpdateCommand != null && profileVm.AdUpdateCommand.CanExecute(adItem))
                 {
-                    profileVm.AdPageCommand.Execute(adItem);
+                    profileVm.AdUpdateCommand.Execute(adItem);
                 }
             }
         }
 
+        private void Quit_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext is ProfileVM Vm)
+            {
+                Vm.Quit.Execute(null);
+            }
+
+        }
     }
 }

@@ -37,7 +37,7 @@ namespace DealHubWPF.ViewModel
             _system = system;
             RegisterPageCommand = navigation.RegisterPageCommand;
             AdPageCommand = navigation.RegisterPageCommand;
-            Ads = system.AllAds.Where(a => a.IsActive == true).ToList();
+            Ads = currentUser.ViewAds(_system);
         }
        
         private Category? _selectedCategory;

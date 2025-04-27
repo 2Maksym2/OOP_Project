@@ -50,5 +50,25 @@
     <DataTemplate DataType="{x:Type vm:OrderVM}">
         <view:Order />
     </DataTemplate>
+  
+    <DataTemplate DataType="{x:Type vm:UpdateAdVM}">
+        <view:UpdateAd />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AdminAdsListVM}">
+        <view:AdminAdsList />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AdminComplaintsVM}">
+        <view:AdminComplaints />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AdminPanelVM}">
+        <view:AdminPanel />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AdminUsersListVM}">
+        <view:AdminUsersList />
+    </DataTemplate>
 
 </ResourceDictionary>

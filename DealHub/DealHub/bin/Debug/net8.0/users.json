@@ -3,23 +3,13 @@
     "BlockedTime": "0001-01-01T00:00:00",
     "Ads": [
       {
-        "Id": 1,
-        "Title": "Продам IPhone 12 Pro",
-        "Description": "Смартфон IPhone 12 Pro, 128GB, без подряпин. В комплекті зарядний пристрій та коробка.",
-        "Price": 18000.0,
-        "Category": "Електроніка",
-        "Image": "https://content2.rozetka.com.ua/goods/images/big/507679444.jpg",
-        "IsActive": true,
-        "OwnerNickname": "Maxim079"
-      },
-      {
         "Id": 2,
         "Title": "Дитяча коляска 2 в 1",
         "Description": "Продається коляска Anex в гарному стані. Має ароматизацію, зручна для малюка.",
         "Price": 7500.0,
         "Category": "Дитячі_товари",
         "Image": "https://content2.rozetka.com.ua/goods/images/big/499222168.webp",
-        "IsActive": true,
+        "IsActive": false,
         "OwnerNickname": "Maxim079"
       },
       {
@@ -29,26 +19,6 @@
         "Price": 510000.0,
         "Category": "Автотовари",
         "Image": "https://cdn4.riastatic.com/photosnew/auto/photo/skoda_octavia__591821104bx.webp",
-        "IsActive": true,
-        "OwnerNickname": "Maxim079"
-      },
-      {
-        "Id": 11,
-        "Title": "Коробка",
-        "Description": "Найдорожча коробка у вашому житті",
-        "Price": 50000.0,
-        "Category": "Інше",
-        "Image": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\Windows\\INetCache\\IE\\NYD14378\\39705837993303[1].png",
-        "IsActive": true,
-        "OwnerNickname": "Maxim079"
-      },
-      {
-        "Id": 12,
-        "Title": "Продам слона",
-        "Description": "КУПИ СЛОНА НЕДОРОГО!",
-        "Price": 150000.0,
-        "Category": "Зоотовари",
-        "Image": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\Windows\\INetCache\\IE\\2WJQYRFM\\1200px-Elephant_near_ndutu[1].jpg",
         "IsActive": true,
         "OwnerNickname": "Maxim079"
       }
@@ -95,6 +65,18 @@
         "senderNickname": "Maxim079",
         "Content": "№2",
         "SentAt": "2025-04-21T16:09:36.8346601+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "добрий день",
+        "SentAt": "2025-04-23T23:03:25.9579623+03:00"
+      },
+      {
+        "receiverNickname": "PashaT",
+        "senderNickname": "Maxim079",
+        "Content": "\nДобрий день! Я оформив замовлення на Продам велосипед BMX.\nМої контактні дані для зв'яку: \nПІБ: rewtyuio  dfsgthjyki  wertyui\nМій номер: +380 995087102\nАдреса доставки: adsfghjkhh",
+        "SentAt": "2025-04-23T23:04:52.7955019+03:00"
       }
     ],
     "MessagesReceived": [
@@ -120,7 +102,7 @@
         "Price": 22000.0,
         "Category": "Одяг",
         "Image": "https://img.modivo.cloud/product(1/3/9/7/1397780f4c6f8a5ae3b00933c7abc4f509064822_01_9358590271463_PJ.jpg,webp)/bardot-shuba-sylvie-59474jb2-chornii-regular-fit-0000304921179.webp",
-        "IsActive": false,
+        "IsActive": true,
         "OwnerNickname": "Zubaref"
       },
       {
@@ -206,6 +188,12 @@
         "senderNickname": "Maxim079",
         "Content": "№2",
         "SentAt": "2025-04-21T16:09:36.8346601+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "добрий день",
+        "SentAt": "2025-04-23T23:03:25.9579623+03:00"
       }
     ],
     "Reviews": [
@@ -213,6 +201,11 @@
         "AuthorName": "PashaT",
         "Content": "Гарний сервіс",
         "CreatedAt": "2025-04-01T01:12:08.7401202+03:00"
+      },
+      {
+        "AuthorName": "Maxim079",
+        "Content": "Го в бравл",
+        "CreatedAt": "2025-04-23T23:07:37.8238933+03:00"
       }
     ],
     "IsAdmin": false,
@@ -267,6 +260,12 @@
         "senderNickname": "Zubaref",
         "Content": "Дякую за замовлення, товар відправив очікуйте.",
         "SentAt": "2025-04-01T01:07:27.9761586+03:00"
+      },
+      {
+        "receiverNickname": "PashaT",
+        "senderNickname": "Maxim079",
+        "Content": "\nДобрий день! Я оформив замовлення на Продам велосипед BMX.\nМої контактні дані для зв'яку: \nПІБ: rewtyuio  dfsgthjyki  wertyui\nМій номер: +380 995087102\nАдреса доставки: adsfghjkhh",
+        "SentAt": "2025-04-23T23:04:52.7955019+03:00"
       }
     ],
     "Reviews": [],

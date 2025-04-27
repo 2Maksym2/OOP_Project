@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\complaint.png" />
     <None Remove="Images\flag.png" />
     <None Remove="Images\minus.png" />
     <None Remove="Images\plus.png" />
@@ -22,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\complaint.png" />
     <Resource Include="Images\flag.png" />
     <Resource Include="Images\image.png" />
     <Resource Include="Images\minus.png" />

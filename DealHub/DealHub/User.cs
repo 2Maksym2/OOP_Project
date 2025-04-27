@@ -57,9 +57,9 @@ namespace DealHub
             return ads;
         }
 
-        public virtual void ShowMenu()
+        public virtual List<Ad> ViewAds(DealHubSystem system)
         {
-            Console.WriteLine("Меню користувача");
+         return new List<Ad>();
         }
     }
 }

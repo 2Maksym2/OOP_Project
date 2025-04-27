@@ -62,3 +62,15 @@ D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\DealHu
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\ref\DealHubWPF.dll
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\SendComplaint.g.cs
 D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\SendComplaint.baml
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\UpdateAd.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\UpdateAd.baml
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdminAdsList.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdminComplaints.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdminPanel.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdminUsersList.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdminAdsList.baml
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdminComplaints.baml
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdminPanel.baml
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\AdminUsersList.baml
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\BanDate.g.cs
+D:\labs\Practice2\OOP_Project\DealHub\DealHubWPF\obj\Debug\net8.0-windows\View\BanDate.baml

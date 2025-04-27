@@ -55,13 +55,11 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- Фото -->
-                    <Button Style="{StaticResource RegButtons}" Background="Transparent">
 
                         <StackPanel Grid.Column="0" HorizontalAlignment="Center">
-                            <Image Source="{Binding Image}" Width="155" Height="166" Margin="0,0,0,10"/>
+                            <Image Source="{Binding Image}" Width="149" Height="183" Margin="0,0,0,10"/>
                             <Button Style="{StaticResource CategoryButtons}"  Content="Вибрати фото" Click="ChooseImage_Click" Width="110" Margin="0,10,0,0" Height="24"/>
                         </StackPanel>
-                    </Button>
 
                     <!-- Інформація про товар -->
                     <StackPanel Grid.Column="2" VerticalAlignment="Top">
@@ -74,8 +72,8 @@
                         <!-- Випадаючий список -->
                         <ComboBox  ItemsSource="{Binding Categories}"   SelectedItem="{Binding SelectedCategory, Mode=TwoWay}"  HorizontalAlignment="Left" Width="207" Text="Категорія">
                         </ComboBox>
-                        <Label Content="Додайте детальний опис продукту (не обов’язково)"/>
-                        <TextBox Background="Transparent" TextWrapping="Wrap" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" FontSize="13" Margin="0,5" Height="24"/>
+                        <Label Content="Додайте детальний опис продукту "/>
+                        <TextBox Background="Transparent" TextWrapping="Wrap" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" FontSize="13" Margin="0,5" Height="53"/>
                         <!-- Кнопка додавання -->
                         <Button Style="{StaticResource CategoryButtons}" Content="Додати оголошення" Width="160" Height="28" Background="#9B59B6" Foreground="White" Margin="0,50,0,0" BorderThickness="0" HorizontalAlignment="Right" Click="Button_Click" />
 

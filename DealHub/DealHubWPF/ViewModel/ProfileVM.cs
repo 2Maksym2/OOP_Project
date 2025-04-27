@@ -17,8 +17,9 @@ namespace DealHubWPF.ViewModel
         public ICommand ChatsCommand { get; }
         public ICommand RegUserPageCommand { get; }
         public ICommand AddAdCommand { get; }
-        public ICommand AdPageCommand { get; }
+        public ICommand UpdateAdCommand { get; }
 
+        private NavigationVM _navigation;
         public DealHubSystem _system;
         private  RegisteredUser _currentuser;
         private List<Ad> _ads;
@@ -41,15 +42,16 @@ namespace DealHubWPF.ViewModel
         public ProfileVM(NavigationVM navigation, DealHubSystem system, RegisteredUser user)
         {
             _system = system;
+            _navigation = navigation;
             _currentuser = user;
             HomeCommand = navigation.HomeCommand;
             RegUserPageCommand = navigation.RegisteredUserPCommand;
             ChatsCommand = navigation.ChatsCommand;
             ReviewsCommand = navigation.ReviewsCommand;
             AddAdCommand = navigation.AddAdCommand;
-            AdPageCommand = navigation.AdPageCommand;
+            UpdateAdCommand = navigation.UpdateAdCommand;
             UserName = user.Nickname;
-            Ads = system.AllAds.Where(a => a.OwnerNickname == UserName).ToList();
+            Ads = _currentuser.ViewAds(_system);
         }
         private string _adName;
         public string AdName
@@ -66,7 +68,7 @@ namespace DealHubWPF.ViewModel
         {
             if (obj is Ad ad)
             _currentuser.DeleteAd(_system, ad);
-            Ads = _system.AllAds.Where(a => a.OwnerNickname == UserName).ToList();
+            Ads = _currentuser.ViewAds(_system);
             _system.SaveData();
         });
 
@@ -74,5 +76,19 @@ namespace DealHubWPF.ViewModel
         {
             Ads = _currentuser.Search(null, AdName, _system).Where(a => a.OwnerNickname == UserName).ToList();
         });
+        public ICommand Quit => new RelayCommand(obj =>
+        {
+            _navigation.RegisteredUserToPass = null;
+            _navigation.ad = null;
+            _navigation.AnotherRegisteredUser = null;
+            HomeCommand.Execute(null);
+        });
+        public ICommand AdUpdateCommand => new RelayCommand(obj =>
+        {
+            if (obj is Ad _ad)
+            _navigation.ad = _ad;
+            UpdateAdCommand.Execute(null);
+        });
+
     }
 }

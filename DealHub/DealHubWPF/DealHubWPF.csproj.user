@@ -7,7 +7,22 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\BanDate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\AddAd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminAdsList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminComplaints.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminUsersList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\AdPage.xaml.cs">
@@ -49,6 +64,9 @@
     <Compile Update="View\Reviews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\UpdateAd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -69,7 +87,22 @@
     <Page Update="Utilities\DataTemplate.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\BanDate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\AddAd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminAdsList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminComplaints.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminUsersList.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\AdPage.xaml">
@@ -109,6 +142,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Reviews.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UpdateAd.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

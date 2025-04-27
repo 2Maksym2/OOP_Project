@@ -105,5 +105,14 @@ namespace DealHubWPF.View
             }
 
         }
+
+        private void Quit_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext is ChatsVM Vm)
+            {
+                Vm.Quit.Execute(null);
+            }
+
+        }
     }
 }

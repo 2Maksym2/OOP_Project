@@ -1,0 +1,16 @@
+﻿<Window x:Class="DealHubWPF.ViewModel.BanDate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DealHubWPF.ViewModel"
+        mc:Ignorable="d"
+        Title="Оберіть дату блокування" Height="151" Width="300"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <StackPanel Margin="10">
+        <TextBlock Text="Оберіть дату блокування:" Margin="0,0,0,10" />
+        <DatePicker x:Name="BlockDatePicker" SelectedDate="{Binding SelectedDate}" />
+        <Button Style="{StaticResource CategoryButtons}" Content="Підтвердити" Margin="0,10,0,0" Click="ConfirmButton_Click" Height="24" Width="158" />
+    </StackPanel>
+</Window>

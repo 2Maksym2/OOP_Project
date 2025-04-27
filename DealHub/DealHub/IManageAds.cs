@@ -9,7 +9,7 @@ namespace DealHub
     public interface IManageAds
     {
         void CreateAd(DealHubSystem system, string title, string description, Category category, string image, double price, RegisteredUser user);
-        void EditAd(int adId, string newTitle, string newDescription);
+        void EditAd(Ad ad, string newTitle, string newDescription, Category newcategory, string newimage, double newprice, bool active);
         void DeleteAd(DealHubSystem system, Ad ad);
     }
 }

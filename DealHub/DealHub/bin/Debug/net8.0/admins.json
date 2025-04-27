@@ -1,1 +1,7 @@
-﻿[]
+﻿[
+  {
+    "IsAdmin": true,
+    "Nickname": "Admin",
+    "Password": "Administrator"
+  }
+]

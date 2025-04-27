@@ -58,7 +58,7 @@
                                 <TextBlock TextWrapping="Wrap" Text="{Binding Price, StringFormat={}{0} грн}" FontSize="18" FontWeight="Bold" Width="106" />
                             </DockPanel>
                             <Button Style="{StaticResource CategoryButtons}" Content="Повідомлення" Background="#6C3483" Foreground="White" Height="32" Margin="0,15,0,5" BorderThickness="0" Click="Button_Click"/>
-                            <Button Command="{Binding OrderCommand}" Style="{StaticResource CategoryButtons}" Content="Оформити доставку" Background="#6C3483" Foreground="White" Height="32" BorderThickness="0"/>
+                            <Button  Style="{StaticResource CategoryButtons}" Content="Оформити доставку" Background="#6C3483" Foreground="White" Height="32" BorderThickness="0" Click="Button_Click_3"/>
                         </StackPanel>
                     </Border>
 

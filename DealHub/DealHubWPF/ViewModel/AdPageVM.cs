@@ -162,6 +162,17 @@ namespace DealHubWPF.ViewModel
             var ComplaintWindow = new View.SendComplaint(_navigation, _system, SelectedAd);
             ComplaintWindow.ShowDialog();
         });
+        public ICommand Order => new RelayCommand(obj =>
+        {
+            if (_navigation.ad.IsActive == true)
+            {
+                OrderCommand.Execute(null);
+            }
+            else
+            {
+                MessageBox.Show("Товар недоступний", "Помилка", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        });
 
     }
 }

@@ -35,7 +35,6 @@ namespace DealHubWPF.View
             var border = sender as Border;
             var adItem = border?.DataContext;
 
-            // Отримуємо DataContext сторінки, який є HomeVM
             if (adItem != null && this.DataContext is RegisteredUserPageVM regpVM)
             {
                 if (regpVM.GoAdPageCommand != null && regpVM.GoAdPageCommand.CanExecute(adItem))

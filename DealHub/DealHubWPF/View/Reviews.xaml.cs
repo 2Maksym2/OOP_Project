@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DealHubWPF.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,15 @@ namespace DealHubWPF.View
         public Reviews()
         {
             InitializeComponent();
+        }
+
+        private void Quit_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.DataContext is ReviewsVM Vm)
+            {
+                Vm.Quit.Execute(null);
+            }
+
         }
     }
 }

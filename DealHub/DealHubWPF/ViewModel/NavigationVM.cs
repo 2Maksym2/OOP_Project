@@ -17,6 +17,7 @@ namespace DealHubWPF.ViewModel
         private object _currentView;
         public RegisteredUser? RegisteredUserToPass { get; set; }
         public RegisteredUser? AnotherRegisteredUser { get; set; }
+        public Admin? Admin { get; set; }
 
         public object CurrentView
         {
@@ -39,7 +40,11 @@ namespace DealHubWPF.ViewModel
         public ICommand AnotherUserReviewsCommand { get; set; }
         public ICommand AdPageCommand { get; set; }
         public ICommand OrderPageCommand { get; set; }
-
+        public ICommand UpdateAdCommand { get; set; }
+        public ICommand AdminPanelCommand { get; set; }
+        public ICommand AdminUsersListCommand { get; set; }
+        public ICommand AdminAdsListCommand { get; set; }
+        public ICommand AdminComplaintsCommand { get; set; }
 
         private void Home(object obj) => CurrentView = new HomeVM(this, _system);
         private void Profile(object obj) => CurrentView = new ProfileVM(this, _system, RegisteredUserToPass);
@@ -63,10 +68,17 @@ namespace DealHubWPF.ViewModel
         public void AnotherUserReviews(object obj) => CurrentView = new AnotherUserReviewsVM(this, AnotherRegisteredUser);
         public void AdPage(object obj) => CurrentView = new AdPageVM(this, ad, _system, RegisteredUserToPass);
         public void Order(object obj) => CurrentView = new OrderVM(this, ad, _system, RegisteredUserToPass);
+        public void UpdateAd(object obj) => CurrentView = new UpdateAdVM(this, ad, _system, RegisteredUserToPass);
+        public void AdminPanel(object obj) => CurrentView = new AdminPanelVM(this, _system);
+        public void AdminUsersList(object obj) => CurrentView = new AdminUsersListVM(this, _system);
+        public void AdminAdsList(object obj) => CurrentView = new AdminAdsListVM(this, _system);
+        public void AdminComplaints(object obj) => CurrentView = new AdminComplaintsVM(this, _system);
 
         public NavigationVM(DealHubSystem system)
         {
+            //головна система
             _system = system;
+            //звичайні користувачі
             HomeCommand = new RelayCommand(Home);
             ProfileCommand = new RelayCommand(Profile);
             RegisterPageCommand = new RelayCommand(RegisterPage);
@@ -79,8 +91,13 @@ namespace DealHubWPF.ViewModel
             AnotherUserCommand = new RelayCommand(AnotherUser);
             AnotherUserReviewsCommand = new RelayCommand(AnotherUserReviews);
             OrderPageCommand = new RelayCommand(Order);
-
-            //Startup Page
+            UpdateAdCommand = new RelayCommand(UpdateAd);
+            //Адміністратор
+            AdminUsersListCommand = new RelayCommand(AdminUsersList);
+            AdminAdsListCommand = new RelayCommand(AdminAdsList);
+            AdminComplaintsCommand = new RelayCommand(AdminComplaints);
+            AdminPanelCommand = new RelayCommand(AdminPanel);
+            //Початкова сторінка
             CurrentView = new HomeVM(this, _system);
         }
         
