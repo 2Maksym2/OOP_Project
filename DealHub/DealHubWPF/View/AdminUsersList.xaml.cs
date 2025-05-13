@@ -1,5 +1,4 @@
 ﻿using DealHubWPF.Model;
-using DealHubWPF.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DealHub;
+using DealHubWPF.ViewModel;
 
 namespace DealHubWPF.View
 {

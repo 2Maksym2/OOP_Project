@@ -1,17 +1,7 @@
 ﻿[
   {
-    "BlockedTime": "0001-01-01T00:00:00",
+    "BlockedTime": "2025-04-30T00:00:00",
     "Ads": [
-      {
-        "Id": 2,
-        "Title": "Дитяча коляска 2 в 1",
-        "Description": "Продається коляска Anex в гарному стані. Має ароматизацію, зручна для малюка.",
-        "Price": 7500.0,
-        "Category": "Дитячі_товари",
-        "Image": "https://content2.rozetka.com.ua/goods/images/big/499222168.webp",
-        "IsActive": false,
-        "OwnerNickname": "Maxim079"
-      },
       {
         "Id": 3,
         "Title": "Авто Shkoda Octavia 2015, 1.6 дизель",
@@ -77,6 +67,12 @@
         "senderNickname": "Maxim079",
         "Content": "\nДобрий день! Я оформив замовлення на Продам велосипед BMX.\nМої контактні дані для зв'яку: \nПІБ: rewtyuio  dfsgthjyki  wertyui\nМій номер: +380 995087102\nАдреса доставки: adsfghjkhh",
         "SentAt": "2025-04-23T23:04:52.7955019+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "\nДобрий день! Я оформив замовлення на Продається ноутбук Asus.\nМої контактні дані для зв'яку: \nПІБ: Poletay  Maxim  Victorovich\nМій номер: +380 995087102\nАдреса доставки: qwerty",
+        "SentAt": "2025-04-29T12:51:31.5664864+03:00"
       }
     ],
     "MessagesReceived": [
@@ -85,9 +81,51 @@
         "senderNickname": "Zubaref",
         "Content": "Добрий день хочу замовити смартфон",
         "SentAt": "2025-04-01T00:44:05.5737798+03:00"
+      },
+      {
+        "receiverNickname": "Maxim079",
+        "senderNickname": "usermaxim",
+        "Content": "Привіт, зацікавив твій автомобіль Skoda Octavia 2015. Чи можна отримати коротке відео огляд (стан кузова, салону, запуск двигуна)?",
+        "SentAt": "2025-05-11T22:54:12.0563654+03:00"
       }
     ],
-    "Reviews": [],
+    "Reviews": [
+      {
+        "AuthorName": "User1",
+        "Content": "Дякую за чудовий товар, пральна машина відповідає опису!",
+        "CreatedAt": "2025-05-05T14:22:08"
+      },
+      {
+        "AuthorName": "User3",
+        "Content": "Все супер, отримала сукню швидко, якість як нова!",
+        "CreatedAt": "2025-05-08T10:10:45"
+      },
+      {
+        "AuthorName": "User6",
+        "Content": "Коляска зручна і легка, рекомендую продавця!",
+        "CreatedAt": "2025-05-10T08:55:12"
+      },
+      {
+        "AuthorName": "User8",
+        "Content": "Продавець швидко відповів і все пояснив. Відеореєстратор працює відмінно.",
+        "CreatedAt": "2025-05-07T16:40:11"
+      },
+      {
+        "AuthorName": "User9",
+        "Content": "Корм дійсно оригінальний. Кіт задоволений :)",
+        "CreatedAt": "2025-05-06T09:34:22"
+      },
+      {
+        "AuthorName": "User2",
+        "Content": "Дякую Maxim079 за швидке оформлення замовлення на смартфон. Все чітко і зручно.",
+        "CreatedAt": "2025-05-09T13:30:44"
+      },
+      {
+        "AuthorName": "PashaT",
+        "Content": "Все прийшло як домовлялися. Велосипед у гарному стані, Maxim079 – відповідальний продавець.",
+        "CreatedAt": "2025-05-10T11:12:27"
+      }
+    ],
     "IsAdmin": false,
     "Nickname": "Maxim079",
     "Password": "123456"
@@ -122,7 +160,7 @@
         "Price": 28000.0,
         "Category": "Електроніка",
         "Image": "https://kvshop.com.ua/users/products/429/429441/big/u0955387-big-1723641329.webp",
-        "IsActive": true,
+        "IsActive": false,
         "OwnerNickname": "Zubaref"
       }
     ],
@@ -194,6 +232,12 @@
         "senderNickname": "Maxim079",
         "Content": "добрий день",
         "SentAt": "2025-04-23T23:03:25.9579623+03:00"
+      },
+      {
+        "receiverNickname": "Zubaref",
+        "senderNickname": "Maxim079",
+        "Content": "\nДобрий день! Я оформив замовлення на Продається ноутбук Asus.\nМої контактні дані для зв'яку: \nПІБ: Poletay  Maxim  Victorovich\nМій номер: +380 995087102\nАдреса доставки: qwerty",
+        "SentAt": "2025-04-29T12:51:31.5664864+03:00"
       }
     ],
     "Reviews": [
@@ -201,11 +245,6 @@
         "AuthorName": "PashaT",
         "Content": "Гарний сервіс",
         "CreatedAt": "2025-04-01T01:12:08.7401202+03:00"
-      },
-      {
-        "AuthorName": "Maxim079",
-        "Content": "Го в бравл",
-        "CreatedAt": "2025-04-23T23:07:37.8238933+03:00"
       }
     ],
     "IsAdmin": false,
@@ -268,9 +307,351 @@
         "SentAt": "2025-04-23T23:04:52.7955019+03:00"
       }
     ],
-    "Reviews": [],
+    "Reviews": [
+      {
+        "AuthorName": "PashaT",
+        "Content": "Гарний сервіс",
+        "CreatedAt": "2025-04-01T01:12:08.7401202+03:00"
+      },
+      {
+        "AuthorName": "User1",
+        "Content": "Дякую за чудовий товар, пральна машина відповідає опису!",
+        "CreatedAt": "2025-05-05T14:22:08"
+      },
+      {
+        "AuthorName": "User3",
+        "Content": "Все супер, отримала сукню швидко, якість як нова!",
+        "CreatedAt": "2025-05-08T10:10:45"
+      },
+      {
+        "AuthorName": "User6",
+        "Content": "Коляска зручна і легка, рекомендую продавця!",
+        "CreatedAt": "2025-05-10T08:55:12"
+      },
+      {
+        "AuthorName": "User8",
+        "Content": "Продавець швидко відповів і все пояснив. Відеореєстратор працює відмінно.",
+        "CreatedAt": "2025-05-07T16:40:11"
+      },
+      {
+        "AuthorName": "User9",
+        "Content": "Корм дійсно оригінальний. Кіт задоволений :)",
+        "CreatedAt": "2025-05-06T09:34:22"
+      }
+    ],
     "IsAdmin": false,
     "Nickname": "PashaT",
     "Password": "11110000"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 10,
+        "Title": "Пральна машина Samsung WW80J5555FX",
+        "Description": "Енергоефективна пральна машина з функцією EcoBubble.",
+        "Price": 8500.0,
+        "Category": "Побутова_техніка",
+        "Image": "https://scdn.comfy.ua/89fc351a-22e7-41ee-8321-f8a9356ca351/https://cdn.comfy.ua/media/catalog/product/u/a/ua-ww6100a-470367-ww80ag6s28aeua-537424404.jpg/w_600",
+        "IsActive": true,
+        "OwnerNickname": "User1"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User1",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 11,
+        "Title": "Смартфон Xiaomi Redmi Note 10",
+        "Description": "Новий смартфон з AMOLED-дисплеєм та потужною батареєю.",
+        "Price": 6000.0,
+        "Category": "Електроніка",
+        "Image": "https://content1.rozetka.com.ua/goods/images/big/454832608.jpg",
+        "IsActive": true,
+        "OwnerNickname": "User2"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User2",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 12,
+        "Title": "Жіноча сукня Zara, розмір S",
+        "Description": "Стильна літня сукня, одягалася один раз.",
+        "Price": 1200.0,
+        "Category": "Одяг",
+        "Image": "https://content1.rozetka.com.ua/goods/images/big/493060349.jpg",
+        "IsActive": true,
+        "OwnerNickname": "User3"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User3",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 13,
+        "Title": "Набір косметики L'Oréal Paris",
+        "Description": "Повний набір для щоденного догляду за шкірою.",
+        "Price": 950.0,
+        "Category": "Догляд_за_тілом",
+        "Image": "https://content1.rozetka.com.ua/goods/images/big/528947664.jpg",
+        "IsActive": true,
+        "OwnerNickname": "User4"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User4",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 25,
+        "Title": "Обміняю гантелі 2×5 кг на килимок для йоги",
+        "Description": "Металеві гантелі в гарному стані, шукаю заміну на якісний килимок.",
+        "Price": 1.0,
+        "Category": "Спорт",
+        "Image": "https://osport.ua/upload/resize_cache/iblock/e13/tbecgtk9p5zn5gvnzp01f4bfqm0p0ku4/500_500_140cd750bba9870f18aada2478b24840a/079A2580.jpg",
+        "IsActive": true,
+        "OwnerNickname": "Obmin4"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "Obmin4",
+    "Password": "swap004"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 14,
+        "Title": "Садовий набір інструментів Fiskars",
+        "Description": "Набір з 5 інструментів для догляду за садом.",
+        "Price": 1500.0,
+        "Category": "Дім_і_сад",
+        "Image": "https://fiskars-official.com.ua/images/product/original/d062e87f06482201ed3be11f8adc6297.jpg",
+        "IsActive": true,
+        "OwnerNickname": "User5"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User5",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 15,
+        "Title": "Дитяча коляска Chicco Bravo",
+        "Description": "Зручна та легка коляска для дітей до 3 років.",
+        "Price": 3000.0,
+        "Category": "Дитячі_товари",
+        "Image": "https://ireland.apollo.olxcdn.com/v1/files/yb4bbk9p4lu02-UA/image",
+        "IsActive": true,
+        "OwnerNickname": "User6"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User6",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 16,
+        "Title": "Тренажер для преса Ab Roller",
+        "Description": "Компактний тренажер для домашніх тренувань.",
+        "Price": 800.0,
+        "Category": "Спорт",
+        "Image": "https://cdn.27.ua/sc--media--prod/default/e6/5b/42/e65b4206-4667-490b-9793-53de42e7f7a3.png",
+        "IsActive": true,
+        "OwnerNickname": "User7"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User7",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 23,
+        "Title": "Обмін одягу: куртка Columbia M на S",
+        "Description": "Хороша зимова куртка, обміняю на такий самий варіант розміром S.",
+        "Price": 1.0,
+        "Category": "Одяг",
+        "Image": "https://cdn.military.eu/ua/media/catalog/product/2/8/2802583_kurtka-columbia-fivemile-butte-ii-hooded-black-nowe-glowne.jpg?width=800&height=640&store=military_ua&image-type=image",
+        "IsActive": true,
+        "OwnerNickname": "Obmin2"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "Obmin2",
+    "Password": "swap002"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 17,
+        "Title": "Автомобільний відеореєстратор Xiaomi 70mai",
+        "Description": "Full HD відеореєстратор з нічним баченням.",
+        "Price": 2000.0,
+        "Category": "Автотовари",
+        "Image": "https://i.allo.ua/media/catalog/product/cache/1/image/524x494/602f0fa2c1f0d1ba5e241f914e856ff9/d/r/dr1311_v0_1206.137_result_result.webp",
+        "IsActive": true,
+        "OwnerNickname": "User8"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User8",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 18,
+        "Title": "Корм для собак Royal Canin, 15 кг",
+        "Description": "Сухий корм для дорослих собак середніх порід.",
+        "Price": 1800.0,
+        "Category": "Зоотовари",
+        "Image": "https://zoonova.ua/storage/products/8/14318/5EAE88Sten7K3AoV0fK7HGbeP8m2UGbllunoINKQ_sm.webp.pagespeed.ce.oabJIPyhST.webp",
+        "IsActive": true,
+        "OwnerNickname": "User9"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User9",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 19,
+        "Title": "Набір для малювання акриловими фарбами",
+        "Description": "Повний набір для творчості: фарби, пензлі, полотно.",
+        "Price": 500.0,
+        "Category": "Хобі_та_творчість",
+        "Image": "https://images.prom.ua/6326224322_w640_h640_velikij-nabir-dlya.jpg",
+        "IsActive": true,
+        "OwnerNickname": "User10"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User10",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 22,
+        "Title": "Обміняю пилосос LG на мікрохвильовку",
+        "Description": "Пилосос працює ідеально, міняю на мікрохвильову піч (можна б/у).",
+        "Price": 1.0,
+        "Category": "Побутова_техніка",
+        "Image": "https://content.rozetka.com.ua/goods/images/big/539800132.jpg",
+        "IsActive": true,
+        "OwnerNickname": "Obmin1"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "Obmin1",
+    "Password": "swap001"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [
+      {
+        "Id": 20,
+        "Title": "Універсальний зарядний пристрій Anker",
+        "Description": "Швидкий зарядний пристрій з підтримкою PowerIQ.",
+        "Price": 700.0,
+        "Category": "Інше",
+        "Image": "https://www.vodafone.ua/shop/media/catalog/product/cache/e96373d1c57081d0b326a3dfa1f55e67/1/6/167726-anker-powerport-735-ganprime-65w-pps-dpds-black.jpg",
+        "IsActive": true,
+        "OwnerNickname": "User11"
+      }
+    ],
+    "MessagesSent": [],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "User11",
+    "Password": "pass123"
+  },
+  {
+    "BlockedTime": "0001-01-01T00:00:00",
+    "Ads": [],
+    "MessagesSent": [
+      {
+        "receiverNickname": "Maxim079",
+        "senderNickname": "usermaxim",
+        "Content": "Привіт, зацікавив твій автомобіль Skoda Octavia 2015. Чи можна отримати коротке відео огляд (стан кузова, салону, запуск двигуна)?",
+        "SentAt": "2025-05-11T22:54:12.0563654+03:00"
+      }
+    ],
+    "MessagesReceived": [],
+    "Reviews": [],
+    "IsAdmin": false,
+    "Nickname": "usermaxim",
+    "Password": "qwerty1235"
   }
 ]

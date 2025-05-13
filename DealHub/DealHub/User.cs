@@ -46,13 +46,13 @@ namespace DealHub
 
         public List<Ad> Search(Category? newcategory, string newtitle, DealHubSystem system)
         {
-            var ads = system.AllAds;
+            var ads = system.AllAds.Where(a => a.IsActive == true).ToList();
 
             if (newcategory.HasValue)
-                ads = ads.Where(a => a.Category == newcategory.Value).ToList(); 
+                ads = ads.Where(a => a.Category == newcategory.Value && a.IsActive == true).ToList(); 
 
             if (!string.IsNullOrWhiteSpace(newtitle))
-                ads = ads.Where(a => a.Title.Contains(newtitle, StringComparison.OrdinalIgnoreCase)).ToList(); 
+                ads = ads.Where(a => a.Title.Contains(newtitle, StringComparison.OrdinalIgnoreCase) && a.IsActive == true).ToList(); 
 
             return ads;
         }

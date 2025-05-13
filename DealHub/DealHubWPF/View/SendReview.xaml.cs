@@ -21,6 +21,7 @@ namespace DealHubWPF.View
     /// </summary>
     public partial class SendReview : Window
     {
+        public bool IsReviewSent { get; private set; } = false;
         public string FeedbackText { get; private set; }
         private readonly NavigationVM _navigation;
         private readonly DealHubSystem _system;
@@ -39,6 +40,7 @@ namespace DealHubWPF.View
             {
                 _navigation.RegisteredUserToPass.LeaveReview(_navigation.AnotherRegisteredUser, FeedbackText);
                 _system.SaveData();
+                IsReviewSent = true;
                 this.Close();
             }
             catch (Exception ex)

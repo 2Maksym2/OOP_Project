@@ -32,6 +32,7 @@ namespace DealHub
         }
         public User RegisterUser(string nickname, string password, bool? isAdmin)
         {
+            nickname = nickname.Trim();
             // Перевірка наявності у списках користувачів та адміністраторів
             if (users.Any(u => u.Nickname == nickname) || admins.Any(a => a.Nickname == nickname))
             {
